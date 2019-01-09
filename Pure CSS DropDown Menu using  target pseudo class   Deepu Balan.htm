@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script async="" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/count.json"></script>
+<meta charset="UTF-8">
+<title>Pure CSS DropDown Menu using :target pseudo class  |   Deepu Balan</title>
+<!-- <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" /> 
+
+<meta name="HandheldFriendly" content="true" />
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' /> -->
+
+
+<meta name="msvalidate.01" content="F92982523C4F390329D72503804343FE">
+<meta name="google-site-verification" content="KnLvkR7lezjdDVfFEBRY6aAgVW_myATL1cEild2xMnQ">
+<link rel="shortcut icon" href="http://deepubalan.com/blog/wp-content/themes/simple/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="http://deepubalan.com/blog/wp-content/themes/simple/favicon.ico" type="image/x-ico">
+<meta name="description" content="Today, CSS3 has become a buzzword of modern web designers and developers around the globe. With its ground-breaking features, CSS3 has made a profound impact on the web designer community by making the lives of web designers easier and fun filled. Here in this post I am going to explain such a cool CSS3 feature called :target Pseudo Class. By playing around and experimenting with the :target pseudo class, I have developed a cool looking pure CSS dropdown menu. This menu is developed wholly using CSS and HTML, no images or javascripts used. Hence it is easily customizable for anyone […]">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="stylesheet" type="text/css" media="all" href="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/style.css">
+<link rel="stylesheet" type="text/css" media="all" href="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/responsive.css">
+<link rel="pingback" href="http://deepubalan.com/blog/xmlrpc.php">
+<link rel="dns-prefetch" href="http://s0.wp.com/">
+<link rel="dns-prefetch" href="http://s.gravatar.com/">
+<link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Deepu Balan - Scribblings of a cyber geek - Web Design Blog » Feed" href="http://deepubalan.com/blog/feed/">
+<link rel="alternate" type="application/rss+xml" title="Deepu Balan - Scribblings of a cyber geek - Web Design Blog » Comments Feed" href="http://deepubalan.com/blog/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Deepu Balan - Scribblings of a cyber geek - Web Design Blog » Pure CSS DropDown Menu using :target pseudo class Comments Feed" href="http://deepubalan.com/blog/2011/06/17/free-pure-css-dropdown-menu-using-target-pseudo-class/feed/">
+		<script src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/cbgapi.loaded_0" async=""></script><script src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/rules-p-26dMFAz8OFMKM.js" async=""></script><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/deepubalan.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.12"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/wp-emoji-release.js" type="text/javascript" defer="defer"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="yarppWidgetCss-css" href="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/widget.css" type="text/css" media="all">
+<link rel="stylesheet" id="yarppRelatedCss-css" href="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/related.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-pagenavi-css" href="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/pagenavi-css.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-syntax-css-css" href="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/wp-syntax.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack-widgets-css" href="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/widgets.css" type="text/css" media="all">
+<link rel="stylesheet" id="sharedaddy-css" href="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/sharing.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp_dlmp_styles-css" href="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/dashicons.css" type="text/css" media="all">
+<link rel="stylesheet" id="thickbox-css" href="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/thickbox.css" type="text/css" media="all">
+<script type="text/javascript" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/jquery.js"></script>
+<script type="text/javascript" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/jquery-migrate.js"></script>
+<link rel="https://api.w.org/" href="http://deepubalan.com/blog/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://deepubalan.com/blog/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://deepubalan.com/blog/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="How classifieds can help your freelance business" href="http://deepubalan.com/blog/2011/05/04/how-classifieds-can-help-your-freelance-business/">
+<link rel="next" title="The Smart Phone vs the Computer" href="http://deepubalan.com/blog/2011/07/20/the-smart-phone-vs-the-computer/">
+<meta name="generator" content="WordPress 4.7.12">
+<link rel="canonical" href="http://deepubalan.com/blog/2011/06/17/free-pure-css-dropdown-menu-using-target-pseudo-class/">
+<link rel="shortlink" href="http://wp.me/p33Aku-ok">
+<link rel="alternate" type="application/json+oembed" href="http://deepubalan.com/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdeepubalan.com%2Fblog%2F2011%2F06%2F17%2Ffree-pure-css-dropdown-menu-using-target-pseudo-class%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://deepubalan.com/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdeepubalan.com%2Fblog%2F2011%2F06%2F17%2Ffree-pure-css-dropdown-menu-using-target-pseudo-class%2F&amp;format=xml">
+<style type="text/css">#widget-collapsarch-3-top span.collapsing.archives {
+        border:0;
+        padding:0; 
+        margin:0; 
+        cursor:pointer;
+} 
+
+#widget-collapsarch-3-top li.widget_collapspage h2 span.sym {float:right;padding:0 .5em}
+#widget-collapsarch-3-top li.collapsing.archives a.self {font-weight:bold}
+#widget-collapsarch-3-top:before {content:'';} 
+#widget-collapsarch-3-top  li.collapsing.archives:before {content:'';} 
+#widget-collapsarch-3-top  li.collapsing.archives {list-style-type:none}
+#widget-collapsarch-3-top  li.collapsing.archives{
+       padding:0 0 0 1em;
+       text-indent:-1em;
+}
+#widget-collapsarch-3-top li.collapsing.archives.item:before {content: '\00BB \00A0' !important;} 
+#widget-collapsarch-3-top li.collapsing.archives .sym {
+   cursor:pointer;
+   font-size:1.2em;
+   font-family:Arial, Helvetica, sans-serif;
+    padding-right:5px;}</style>
+	<style type="text/css">
+	.download-info .download-button {
+		background-image: url(http://deepubalan.com/blog/wp-content/plugins/download-monitor/page-addon/downloadbutton.gif);
+	}
+	.download-info .more-button {
+		background-image: url(http://deepubalan.com/blog/wp-content/plugins/download-monitor/page-addon/morebutton.gif);
+	}
+	</style>
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pure CSS DropDown Menu using :target pseudo class">
+<meta property="og:url" content="http://deepubalan.com/blog/2011/06/17/free-pure-css-dropdown-menu-using-target-pseudo-class/">
+<meta property="og:description" content="Today, CSS3 has become a buzzword of modern web designers and developers around the globe. With its ground-breaking features, CSS3 has made a profound impact on the web designer community by making...">
+<meta property="og:site_name" content="Deepu Balan - Scribblings of a cyber geek - Web Design Blog">
+<meta property="og:image" content="http://deepubalan.com/blog/wp-content/uploads/2011/06/pure-css3-dropdown-menu-using-target-pseudo-class.jpg">
+<meta property="og:image" content="http://deepubalan.com/blog/wp-content/uploads/2011/06/target-pseudo-class-browser-support.gif">
+<meta property="og:image" content="http://i.creativecommons.org/l/by/2.5/in/88x31.png">
+	<link rel="archives" title="August 2018" href="http://deepubalan.com/blog/2018/08/">
+	<link rel="archives" title="May 2018" href="http://deepubalan.com/blog/2018/05/">
+	<link rel="archives" title="April 2018" href="http://deepubalan.com/blog/2018/04/">
+	<link rel="archives" title="May 2017" href="http://deepubalan.com/blog/2017/05/">
+	<link rel="archives" title="April 2017" href="http://deepubalan.com/blog/2017/04/">
+	<link rel="archives" title="March 2017" href="http://deepubalan.com/blog/2017/03/">
+	<link rel="archives" title="February 2017" href="http://deepubalan.com/blog/2017/02/">
+	<link rel="archives" title="December 2016" href="http://deepubalan.com/blog/2016/12/">
+	<link rel="archives" title="February 2016" href="http://deepubalan.com/blog/2016/02/">
+	<link rel="archives" title="January 2016" href="http://deepubalan.com/blog/2016/01/">
+	<link rel="archives" title="December 2015" href="http://deepubalan.com/blog/2015/12/">
+	<link rel="archives" title="June 2015" href="http://deepubalan.com/blog/2015/06/">
+	<link rel="archives" title="April 2015" href="http://deepubalan.com/blog/2015/04/">
+	<link rel="archives" title="February 2015" href="http://deepubalan.com/blog/2015/02/">
+	<link rel="archives" title="January 2015" href="http://deepubalan.com/blog/2015/01/">
+	<link rel="archives" title="December 2014" href="http://deepubalan.com/blog/2014/12/">
+	<link rel="archives" title="November 2014" href="http://deepubalan.com/blog/2014/11/">
+	<link rel="archives" title="September 2014" href="http://deepubalan.com/blog/2014/09/">
+	<link rel="archives" title="August 2014" href="http://deepubalan.com/blog/2014/08/">
+	<link rel="archives" title="July 2014" href="http://deepubalan.com/blog/2014/07/">
+	<link rel="archives" title="December 2013" href="http://deepubalan.com/blog/2013/12/">
+	<link rel="archives" title="October 2013" href="http://deepubalan.com/blog/2013/10/">
+	<link rel="archives" title="September 2013" href="http://deepubalan.com/blog/2013/09/">
+	<link rel="archives" title="August 2013" href="http://deepubalan.com/blog/2013/08/">
+	<link rel="archives" title="July 2013" href="http://deepubalan.com/blog/2013/07/">
+	<link rel="archives" title="June 2013" href="http://deepubalan.com/blog/2013/06/">
+	<link rel="archives" title="May 2013" href="http://deepubalan.com/blog/2013/05/">
+	<link rel="archives" title="April 2013" href="http://deepubalan.com/blog/2013/04/">
+	<link rel="archives" title="March 2013" href="http://deepubalan.com/blog/2013/03/">
+	<link rel="archives" title="February 2013" href="http://deepubalan.com/blog/2013/02/">
+	<link rel="archives" title="January 2013" href="http://deepubalan.com/blog/2013/01/">
+	<link rel="archives" title="December 2012" href="http://deepubalan.com/blog/2012/12/">
+	<link rel="archives" title="November 2012" href="http://deepubalan.com/blog/2012/11/">
+	<link rel="archives" title="October 2012" href="http://deepubalan.com/blog/2012/10/">
+	<link rel="archives" title="August 2012" href="http://deepubalan.com/blog/2012/08/">
+	<link rel="archives" title="July 2012" href="http://deepubalan.com/blog/2012/07/">
+	<link rel="archives" title="June 2012" href="http://deepubalan.com/blog/2012/06/">
+	<link rel="archives" title="May 2012" href="http://deepubalan.com/blog/2012/05/">
+	<link rel="archives" title="April 2012" href="http://deepubalan.com/blog/2012/04/">
+	<link rel="archives" title="March 2012" href="http://deepubalan.com/blog/2012/03/">
+	<link rel="archives" title="February 2012" href="http://deepubalan.com/blog/2012/02/">
+	<link rel="archives" title="January 2012" href="http://deepubalan.com/blog/2012/01/">
+	<link rel="archives" title="December 2011" href="http://deepubalan.com/blog/2011/12/">
+	<link rel="archives" title="August 2011" href="http://deepubalan.com/blog/2011/08/">
+	<link rel="archives" title="July 2011" href="http://deepubalan.com/blog/2011/07/">
+	<link rel="archives" title="June 2011" href="http://deepubalan.com/blog/2011/06/">
+	<link rel="archives" title="May 2011" href="http://deepubalan.com/blog/2011/05/">
+	<link rel="archives" title="April 2011" href="http://deepubalan.com/blog/2011/04/">
+	<link rel="archives" title="November 2010" href="http://deepubalan.com/blog/2010/11/">
+	<link rel="archives" title="August 2010" href="http://deepubalan.com/blog/2010/08/">
+	<link rel="archives" title="July 2010" href="http://deepubalan.com/blog/2010/07/">
+	<link rel="archives" title="June 2010" href="http://deepubalan.com/blog/2010/06/">
+	<link rel="archives" title="May 2010" href="http://deepubalan.com/blog/2010/05/">
+	<link rel="archives" title="April 2010" href="http://deepubalan.com/blog/2010/04/">
+	<link rel="archives" title="March 2010" href="http://deepubalan.com/blog/2010/03/">
+	<link rel="archives" title="February 2010" href="http://deepubalan.com/blog/2010/02/">
+	<link rel="archives" title="January 2010" href="http://deepubalan.com/blog/2010/01/">
+	<link rel="archives" title="December 2009" href="http://deepubalan.com/blog/2009/12/">
+<link href="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/css.css" rel="stylesheet" type="text/css">
+<link href="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/css_002.css" rel="stylesheet" type="text/css">
+<script src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/bootstrap.js" type="text/javascript" async=""></script><link rel="stylesheet" type="text/css" id="gravatar-card-css" href="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/hovercard.css"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/services.css"></head>
+<body class="modal-open">
+<div class="bannerBg">
+	<div class="wrapper">
+	  <div id="header">
+		<div class="social"> <a href="http://facebook.com/deepu6alan"><img style="width:20px;" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/fb-icon.png"></a> <a href="http://twitter.com/bdeepu"><img style="width:20px;" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/twitter-icon.png"></a>
+<a href="https://plus.google.com/b/110543024476624642445/110543024476624642445/posts"><img style="width:20px;" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/gplus-icon.png"></a>
+ <a href="http://deepubalan.com/blog/feed/"><img style="width:20px;" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/rss-icon.png"></a> </div>
+
+<div class="menu-topmenu-container"><ul id="menu-topmenu" class="topnav"><li id="menu-item-1405" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1405"><a href="http://deepubalan.com/blog/">Home</a></li>
+<li id="menu-item-1402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1402"><a href="http://deepubalan.com/blog/about/">About Me</a></li>
+<li id="menu-item-1404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1404"><a href="http://deepubalan.com/blog/portfolio/">Portfolio</a></li>
+<li id="menu-item-3740" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3740"><a href="http://deepubalan.com/blog/my-clicks/">My Clicks</a></li>
+<li id="menu-item-1403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1403"><a href="http://deepubalan.com/blog/contact/">Contact</a></li>
+</ul></div><div>
+	  	<a href="http://deepubalan.com/blog" title="Deepu Balan – Personal portfolio and design blog"><div class="logo"></div></a>
+		<div class="topAd">
+			
+		</div>
+<div style"clear:both"=""></div>
+</div>
+	  </div>
+	</div>
+</div>
+
+<div class="naviBg">
+	<div class="wrapper">
+	  <div class="navWrap">
+		<div class="menu-categories-container"><ul id="menu-categories" class="mainnav"><li id="menu-item-3318" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3318"><a href="http://deepubalan.com/blog/category/web-design/">Web Design</a></li>
+<li id="menu-item-1692" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1692"><a href="http://deepubalan.com/blog/category/xhtml/">HTML</a></li>
+<li id="menu-item-3306" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-3306"><a href="http://deepubalan.com/blog/category/css/">CSS</a></li>
+<li id="menu-item-1696" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1696"><a href="http://deepubalan.com/blog/category/tutorials/">Tutorials</a></li>
+<li id="menu-item-1694" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1694"><a href="http://deepubalan.com/blog/category/tips-and-tricks/">Tips &amp; Tricks</a></li>
+<li id="menu-item-3307" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3307"><a href="http://deepubalan.com/blog/category/freebies/">Freebies</a></li>
+<li id="menu-item-3308" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3308"><a href="http://deepubalan.com/blog/category/graphic-design/">Graphic Design</a></li>
+<li id="menu-item-3317" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3317"><a href="http://deepubalan.com/blog/category/wallpapers/">Wallpapers</a></li>
+<li id="menu-item-3319" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3319"><a href="http://deepubalan.com/blog/category/wordpress/">WordPress</a></li>
+<li id="menu-item-3310" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3310"><a href="http://deepubalan.com/blog/category/inspiration/">Inspiration</a></li>
+<li id="menu-item-3313" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3313"><a href="http://deepubalan.com/blog/category/social-media-2/">Social Media</a></li>
+<li id="menu-item-3311" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3311"><a href="http://deepubalan.com/blog/category/internet/">Internet</a></li>
+</ul></div>		<div style="clear:both"></div>
+	  </div>
+	</div>
+</div>
+<div class="introBg">
+	<div class="wrapper">
+
+			<script type="text/javascript"><!--
+		google_ad_client = "ca-pub-9489985473109490";
+		/* DeepuBalan - 728x90 */
+		google_ad_slot = "5728400883";
+		google_ad_width = 728;
+		google_ad_height = 90;
+		//-->
+		</script>
+		<script type="text/javascript" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/show_ads.js">
+		</script>
+
+	
+
+
+
+	  	</div>
+<div class="strip"></div>
+</div><div class="wrapper"> 
+  <div class="wrap inner"> 
+    <div id="blog">
+	
+        		<div class="titleBar">
+			<h1><a href="http://deepubalan.com/blog/2011/06/17/free-pure-css-dropdown-menu-using-target-pseudo-class/">Pure CSS DropDown Menu using :target pseudo class</a></h1>
+			<strong>By:</strong> <a href="https://plus.google.com/112976466033286689547/" title="Visit Deepu Balan’s website" rel="author external">Deepu Balan</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <strong>In:</strong> <a href="http://deepubalan.com/blog/category/css/" rel="category tag">CSS</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="post">
+        
+            <div class="entry" id="post-1508">
+<div class="ad-block">
+	<script type="text/javascript"><!--
+	google_ad_client = "ca-pub-9489985473109490";
+	/* DeepuBalan - 300x250 */
+	google_ad_slot = "8078578466";
+	google_ad_width = 300;
+	google_ad_height = 250;
+	//-->
+	</script>
+	<script type="text/javascript" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/show_ads.js"></script>
+</div>
+                
+                <div class="splashpic"><img src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/pure-css3-dropdown-menu-using-target-pseudo-class.jpg" alt="Pure CSS3 DropDown Menu Using :target Pseudo Class - Free" title="Pure CSS DropDown Menu Using :target Pseudo Class - Free" class="aligncenter size-full"></div>
+<p>Today, <a href="http://deepubalan.com/blog/tag/css3/" title="css3">CSS3</a> has become a buzzword of modern <a title="web designers" href="http://deepubalan.com/blog/2012/05/18/do-web-designers-need-to-know-coding/">web designers</a>
+ and developers around the globe. With its ground-breaking features, 
+CSS3 has made a profound impact on the web designer community by making 
+the lives of web designers easier and fun filled. Here in this post I am
+ going to explain such a cool CSS3 feature called <em>:target</em> Pseudo Class. By playing around and experimenting with the <em>:target</em> pseudo class, I have developed a cool looking pure CSS dropdown menu. This menu is developed wholly using CSS and <a href="http://deepubalan.com/blog/tag/xhtml/" title="html">HTML</a>, no images or javascripts used. Hence it is easily customizable for anyone with very basic css/<a title="html" href="http://deepubalan.com/blog/category/xhtml/">html</a> knowledge. </p>
+<p>Before we continue about how to create the menu, let’s take a look at the fully-functional menu here…</p>
+<p></p><div class="button-1" style="width: 250px;margin-bottom: 15px;" align="center"><a href="http://deepubalan.com/blog/wp-content/uploads/2011/06/example.html?KeepThis=true&amp;TB_iframe=true&amp;height=300&amp;width=590" title="Pure CSS DropDown Menu Using :target Pseudo Class" class="thickbox">VIEW DEMO</a></div>
+<p></p>
+<h2>CSS Pseudo Classes</h2>
+<p>CSS pseudo-classes are used to add a special state or relation to a 
+selector. A pseudo class normally starts with a colon (:) and is 
+appended to a type selector or universal selector without any whitespace
+ in between the selector name and the pseudo class. Pseudo-class names 
+are case-insensitive. Some pseudo-classes are mutually exclusive, while 
+others can be applied simultaneously to the same element. Pseudo-classes
+ may be dynamic, in the sense that an element may acquire or lose a 
+pseudo-class while a user interacts with the document. So, in simple 
+words pseudo classes are really helpful to pick a CSS element in its 
+various states.</p>
+<h3>Syntax</h3>
+
+<div class="wp_syntax" style="position:relative;"><table><tbody><tr><td class="line_numbers"><pre>1
+</pre></td><td class="code"><pre class="css" style="font-family:monospace;">selector<span style="color: #00AA00;">:</span>pseudo-class <span style="color: #00AA00;">{</span> property<span style="color: #00AA00;">:</span><span style="color: #F5758F;">value</span><span style="color: #00AA00;">;</span> <span style="color: #00AA00;">}</span></pre></td></tr></tbody></table><p class="theCode" style="display:none;">selector:pseudo-class { property:value; }</p></div>
+
+<h3>Example</h3>
+
+<div class="wp_syntax" style="position: relative; width: auto;"><table><tbody><tr><td class="line_numbers"><pre>1
+</pre></td><td class="code"><pre class="css" style="font-family:monospace;">a<span style="color: #6666ff;">.navigation</span><span style="color: #00AA00;">:</span><span style="color: #F5758F;">hover</span> <span style="color: #00AA00;">{</span> <span style="color: #000000; font-weight: bold;">color</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#ff0000</span><span style="color: #00AA00;">;</span> <span style="color: #00AA00;">}</span></pre></td></tr></tbody></table><p class="theCode" style="display:none;">a.navigation:hover { color: #ff0000; }</p></div>
+
+<p><span id="more-1508"></span></p>
+<h2>:target Pseudo Class</h2>
+<p>CSS3 offers many more pseudo-classes than CSS2, <em>:target</em> 
+pseudo class is a key structural pseudo-class in the list. Some URIs 
+refers to a location within a resource. This kind of URI ends with a 
+‘hash (#) sign’ followed by an anchor identifier (called the fragment 
+identifier). URIs with fragment identifiers link to a certain element 
+within the document, known as the target element. A target element can 
+be represented by the <em>:target</em> pseudo-class.</p>
+<h3>Example</h3>
+
+<div class="wp_syntax" style="position:relative;"><table><tbody><tr><td class="line_numbers"><pre>1
+</pre></td><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #6666ff;">.wrapper</span> ul li<span style="color: #00AA00;">:</span><span style="color: #F5758F;">target</span> <span style="color: #00AA00;">{</span> <span style="color: #000000; font-weight: bold;">color</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#ff0000</span><span style="color: #00AA00;">;</span> <span style="color: #00AA00;">}</span></pre></td></tr></tbody></table><p class="theCode" style="display:none;">.wrapper ul li:target { color: #ff0000; }</p></div>
+
+<h2>Pure CSS DropDown Menu </h2>
+<p>A highly customizable pure CSS dropdown menu shaped using <em>:target</em>
+ pseudo class. This menu is fully compatible on all modern browsers 
+including IE9. This cool looking menu is created completely using CSS, 
+no images or javascript in it. I have tried a comination of <em>:target</em> and <em>:hover</em> pseudo classes here to get the menu effect. The menu have a cool animation whch can only be seen on webkit browsers.</p>
+<p></p><div class="button-1" style="width: 250px;"><a href="http://deepubalan.com/blog/wp-content/uploads/2011/06/example.html?KeepThis=true&amp;TB_iframe=true&amp;height=300&amp;width=590" title="Pure CSS DropDown Menu Using :target Pseudo Class" class="thickbox">VIEW DEMO</a></div>
+<p></p>
+<p>A trimmed down version code of the above example is given below for 
+easy understanding. You can download the fully functional cross-browser 
+compatible version of this menu from the download link at the bottom 
+part of this post.[ad#ad-1]</p>
+<h2>The  HTML</h2>
+<p></p>
+
+<div class="wp_syntax" style="position: relative; width: auto;"><table><tbody><tr><td class="line_numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+</pre></td><td class="code"><pre class="html4strict" style="font-family:monospace;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">div</span> <span style="color: #000066;">class</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"wrapper"</span>&gt;</span>
+ <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">ul</span>&gt;</span>
+   <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">li</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"a"</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">a</span> <span style="color: #000066;">href</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"#a"</span>&gt;</span>Web Design<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">a</span>&gt;</span>
+     <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">div</span>&gt;</span>
+       <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">hr</span><span style="color: #66cc66;">/</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">b</span>&gt;</span>HTML:<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">b</span>&gt;</span> <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">a</span> <span style="color: #000066;">href</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"#"</span>&gt;</span>Tutorials<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">a</span>&gt;</span> | <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">a</span> <span style="color: #000066;">href</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"#"</span>&gt;</span>Resources<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">a</span>&gt;</span>
+       <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">hr</span><span style="color: #66cc66;">/</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">b</span>&gt;</span>CSS:<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">b</span>&gt;</span> <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">a</span> <span style="color: #000066;">href</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"#"</span>&gt;</span>Tutorials<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">a</span>&gt;</span> | <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">a</span> <span style="color: #000066;">href</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"#"</span>&gt;</span>Examples<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">a</span>&gt;</span>
+       <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">hr</span><span style="color: #66cc66;">/</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">b</span>&gt;</span>CMS:<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">b</span>&gt;</span> <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">a</span> <span style="color: #000066;">href</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"#"</span>&gt;</span>Drupal<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">a</span>&gt;</span> | <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">a</span> <span style="color: #000066;">href</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"#"</span>&gt;</span>Wordpress<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">a</span>&gt;</span>
+     <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">div</span>&gt;</span>
+   <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">li</span>&gt;</span>
+   <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">li</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"b"</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">a</span> <span style="color: #000066;">href</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"#b"</span>&gt;</span>Graphic Design<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">a</span>&gt;</span>
+     <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">div</span>&gt;</span>
+       <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">hr</span><span style="color: #66cc66;">/</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">b</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">a</span> <span style="color: #000066;">href</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"#"</span>&gt;</span>Printmaking<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">a</span>&gt;&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">b</span>&gt;</span>
+       <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">hr</span><span style="color: #66cc66;">/</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">b</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">a</span> <span style="color: #000066;">href</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"#"</span>&gt;</span>Visual Arts<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">a</span>&gt;&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">b</span>&gt;</span>
+     <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">div</span>&gt;</span>
+   <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">li</span>&gt;</span>
+   <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">li</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"c"</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">a</span> <span style="color: #000066;">href</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"#c"</span>&gt;</span>Animation <span style="color: #ddbb00;">&amp;amp;</span> Graphics<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">a</span>&gt;</span>
+     <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">div</span>&gt;</span>
+       <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">hr</span><span style="color: #66cc66;">/</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">b</span>&gt;</span>2D Animation:<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">b</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">br</span> <span style="color: #66cc66;">/</span>&gt;</span> <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">a</span> <span style="color: #000066;">href</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"#"</span>&gt;</span>Analog animation<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">a</span>&gt;</span> | <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">a</span> <span style="color: #000066;">href</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"#"</span>&gt;</span>Flash animation<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">a</span>&gt;</span>
+       <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">hr</span><span style="color: #66cc66;">/</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">b</span>&gt;</span>3D Animation:<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">b</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">br</span> <span style="color: #66cc66;">/</span>&gt;</span> <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">a</span> <span style="color: #000066;">href</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"#"</span>&gt;</span>Motion capture<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">a</span>&gt;</span> | <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">a</span> <span style="color: #000066;">href</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"#"</span>&gt;</span>Photo realistic<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">a</span>&gt;</span>
+     <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">div</span>&gt;</span>
+   <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">li</span>&gt;</span>
+   <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">li</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"d"</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">a</span> <span style="color: #000066;">href</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"#d"</span>&gt;</span>Design Resources<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">a</span>&gt;</span>
+     <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">div</span>&gt;</span>
+       <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">hr</span><span style="color: #66cc66;">/</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">b</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">a</span> <span style="color: #000066;">href</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"#"</span>&gt;</span>w3schools.com<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">a</span>&gt;&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">b</span>&gt;</span>
+       <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">hr</span><span style="color: #66cc66;">/</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">b</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">a</span> <span style="color: #000066;">href</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"#"</span>&gt;</span>alistapart.com<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">a</span>&gt;&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">b</span>&gt;</span>
+       <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">hr</span><span style="color: #66cc66;">/</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">b</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">a</span> <span style="color: #000066;">href</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">"#"</span>&gt;</span>smashingmagazine.com<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">a</span>&gt;&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">b</span>&gt;</span>
+     <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">div</span>&gt;</span>
+   <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">li</span>&gt;</span>
+  <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">ul</span>&gt;</span>
+<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">div</span>&gt;</span></pre></td></tr></tbody></table><p class="theCode" style="display:none;">&lt;div
+ class="wrapper"&gt;
+ &lt;ul&gt;
+   &lt;li id="a"&gt;&lt;a href="#a"&gt;Web Design&lt;/a&gt;
+     &lt;div&gt;
+       &lt;hr/&gt;&lt;b&gt;HTML:&lt;/b&gt; &lt;a 
+href="#"&gt;Tutorials&lt;/a&gt; | &lt;a href="#"&gt;Resources&lt;/a&gt;
+       &lt;hr/&gt;&lt;b&gt;CSS:&lt;/b&gt; &lt;a 
+href="#"&gt;Tutorials&lt;/a&gt; | &lt;a href="#"&gt;Examples&lt;/a&gt;
+       &lt;hr/&gt;&lt;b&gt;CMS:&lt;/b&gt; &lt;a 
+href="#"&gt;Drupal&lt;/a&gt; | &lt;a href="#"&gt;Wordpress&lt;/a&gt;
+     &lt;/div&gt;
+   &lt;/li&gt;
+   &lt;li id="b"&gt;&lt;a href="#b"&gt;Graphic Design&lt;/a&gt;
+     &lt;div&gt;
+       &lt;hr/&gt;&lt;b&gt;&lt;a 
+href="#"&gt;Printmaking&lt;/a&gt;&lt;/b&gt;
+       &lt;hr/&gt;&lt;b&gt;&lt;a href="#"&gt;Visual 
+Arts&lt;/a&gt;&lt;/b&gt;
+     &lt;/div&gt;
+   &lt;/li&gt;
+   &lt;li id="c"&gt;&lt;a href="#c"&gt;Animation &amp;amp; 
+Graphics&lt;/a&gt;
+     &lt;div&gt;
+       &lt;hr/&gt;&lt;b&gt;2D Animation:&lt;/b&gt;&lt;br /&gt; &lt;a 
+href="#"&gt;Analog animation&lt;/a&gt; | &lt;a href="#"&gt;Flash 
+animation&lt;/a&gt;
+       &lt;hr/&gt;&lt;b&gt;3D Animation:&lt;/b&gt;&lt;br /&gt; &lt;a 
+href="#"&gt;Motion capture&lt;/a&gt; | &lt;a href="#"&gt;Photo 
+realistic&lt;/a&gt;
+     &lt;/div&gt;
+   &lt;/li&gt;
+   &lt;li id="d"&gt;&lt;a href="#d"&gt;Design Resources&lt;/a&gt;
+     &lt;div&gt;
+       &lt;hr/&gt;&lt;b&gt;&lt;a 
+href="#"&gt;w3schools.com&lt;/a&gt;&lt;/b&gt;
+       &lt;hr/&gt;&lt;b&gt;&lt;a 
+href="#"&gt;alistapart.com&lt;/a&gt;&lt;/b&gt;
+       &lt;hr/&gt;&lt;b&gt;&lt;a 
+href="#"&gt;smashingmagazine.com&lt;/a&gt;&lt;/b&gt;
+     &lt;/div&gt;
+   &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</p></div>
+
+<h2>The CSS</h2>
+<p></p>
+
+<div class="wp_syntax" style="position: relative; width: auto;"><table><tbody><tr><td class="line_numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+</pre></td><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #6666ff;">.wrapper</span> <span style="color: #00AA00;">{</span>
+    <span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">600px</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">position</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">absolute</span><span style="color: #00AA00;">;</span> <span style="color: #00AA00;">}</span>
+<span style="color: #6666ff;">.wrapper</span> ul <span style="color: #00AA00;">{</span>
+    <span style="color: #000000; font-weight: bold;">list-style</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">none</span><span style="color: #00AA00;">;</span> <span style="color: #00AA00;">}</span>
+<span style="color: #6666ff;">.wrapper</span> ul li <span style="color: #00AA00;">{</span>
+    <span style="color: #000000; font-weight: bold;">background-color</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#F8F8F8</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">border</span><span style="color: #00AA00;">:</span> <span style="color: #933;">1px</span> <span style="color: #993333;">solid</span> <span style="color: #cc00cc;">#a9a9a9</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">display</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">block</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">float</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">left</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">font</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">bold</span> <span style="color: #933;">12px</span> arial<span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">30px</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">line-height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">30px</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">overflow</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">hidden</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">padding-left</span><span style="color: #00AA00;">:</span> <span style="color: #933;">15px</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">position</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">absolute</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">135px</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">z-index</span><span style="color: #00AA00;">:</span> <span style="color: #cc66cc;">10000</span><span style="color: #00AA00;">;</span>
+    -webkit-box-shadow<span style="color: #00AA00;">:</span><span style="color: #933;">0px</span> <span style="color: #933;">3px</span> <span style="color: #933;">5px</span> <span style="color: #cc00cc;">#cacaca</span><span style="color: #00AA00;">;</span>
+    -moz-box-shadow<span style="color: #00AA00;">:</span><span style="color: #933;">0px</span> <span style="color: #933;">3px</span> <span style="color: #933;">5px</span> <span style="color: #cc00cc;">#cacaca</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">box-shadow</span><span style="color: #00AA00;">:</span><span style="color: #933;">0px</span> <span style="color: #933;">3px</span> <span style="color: #933;">5px</span> <span style="color: #cc00cc;">#cacaca</span><span style="color: #00AA00;">;</span> 
+    <span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> linear-gradient<span style="color: #00AA00;">(</span><span style="color: #993333;">top</span><span style="color: #00AA00;">,</span> <span style="color: #cc00cc;">#ffffff</span> <span style="color: #933;">0%</span><span style="color: #00AA00;">,</span><span style="color: #cc00cc;">#f1f1f1</span> <span style="color: #933;">50%</span><span style="color: #00AA00;">,</span><span style="color: #cc00cc;">#e1e1e1</span> <span style="color: #933;">51%</span><span style="color: #00AA00;">,</span><span style="color: #cc00cc;">#f6f6f6</span> <span style="color: #933;">100%</span><span style="color: #00AA00;">)</span><span style="color: #00AA00;">;</span><span style="color: #00AA00;">}</span>
+<span style="color: #6666ff;">.wrapper</span> ul li<span style="color: #00AA00;">:</span><span style="color: #F5758F;">hover</span> <span style="color: #00AA00;">{</span>
+    <span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> linear-gradient<span style="color: #00AA00;">(</span><span style="color: #993333;">top</span><span style="color: #00AA00;">,</span> <span style="color: #cc00cc;">#ffffff</span> <span style="color: #933;">0%</span><span style="color: #00AA00;">,</span><span style="color: #cc00cc;">#f3f3f3</span> <span style="color: #933;">50%</span><span style="color: #00AA00;">,</span><span style="color: #cc00cc;">#ededed</span> <span style="color: #933;">51%</span><span style="color: #00AA00;">,</span><span style="color: #cc00cc;">#ffffff</span> <span style="color: #933;">100%</span><span style="color: #00AA00;">)</span><span style="color: #00AA00;">;</span><span style="color: #00AA00;">}</span>
+<span style="color: #6666ff;">.wrapper</span> ul li<span style="color: #00AA00;">:</span><span style="color: #F5758F;">first-child</span> <span style="color: #00AA00;">{</span>
+    -moz-border-radius<span style="color: #00AA00;">:</span> <span style="color: #933;">4px</span> <span style="color: #cc66cc;">0</span> <span style="color: #cc66cc;">0</span> <span style="color: #933;">4px</span><span style="color: #00AA00;">;</span>
+    -webkit-border-radius<span style="color: #00AA00;">:</span> <span style="color: #933;">4px</span> <span style="color: #cc66cc;">0</span> <span style="color: #cc66cc;">0</span> <span style="color: #933;">4px</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">border-radius</span><span style="color: #00AA00;">:</span> <span style="color: #933;">4px</span> <span style="color: #cc66cc;">0</span> <span style="color: #cc66cc;">0</span> <span style="color: #933;">4px</span><span style="color: #00AA00;">;</span> <span style="color: #00AA00;">}</span>
+<span style="color: #6666ff;">.wrapper</span> ul li<span style="color: #00AA00;">:</span><span style="color: #F5758F;">last-child</span> <span style="color: #00AA00;">{</span>
+    -moz-border-radius<span style="color: #00AA00;">:</span> <span style="color: #cc66cc;">0</span> <span style="color: #933;">4px</span> <span style="color: #933;">4px</span> <span style="color: #cc66cc;">0</span><span style="color: #00AA00;">;</span>
+    -webkit-border-radius<span style="color: #00AA00;">:</span> <span style="color: #cc66cc;">0</span> <span style="color: #933;">4px</span> <span style="color: #933;">4px</span> <span style="color: #cc66cc;">0</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">border-radius</span><span style="color: #00AA00;">:</span> <span style="color: #cc66cc;">0</span> <span style="color: #933;">4px</span> <span style="color: #933;">4px</span> <span style="color: #cc66cc;">0</span><span style="color: #00AA00;">;</span> <span style="color: #00AA00;">}</span>
+<span style="color: #6666ff;">.wrapper</span> ul li<span style="color: #cc00cc;">#b</span> <span style="color: #00AA00;">{</span>
+    <span style="color: #000000; font-weight: bold;">margin-left</span><span style="color: #00AA00;">:</span> <span style="color: #933;">151px</span><span style="color: #00AA00;">;</span> <span style="color: #00AA00;">}</span>
+<span style="color: #6666ff;">.wrapper</span> ul li<span style="color: #cc00cc;">#c</span> <span style="color: #00AA00;">{</span>
+    <span style="color: #000000; font-weight: bold;">margin-left</span><span style="color: #00AA00;">:</span> <span style="color: #933;">302px</span><span style="color: #00AA00;">;</span> <span style="color: #00AA00;">}</span>
+<span style="color: #6666ff;">.wrapper</span> ul li<span style="color: #cc00cc;">#d</span> <span style="color: #00AA00;">{</span>
+    <span style="color: #000000; font-weight: bold;">margin-left</span><span style="color: #00AA00;">:</span> <span style="color: #933;">453px</span><span style="color: #00AA00;">;</span> <span style="color: #00AA00;">}</span>
+<span style="color: #6666ff;">.wrapper</span> ul li a <span style="color: #00AA00;">{</span>
+    <span style="color: #000000; font-weight: bold;">display</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">block</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">text-decoration</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">none</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">color</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#303030</span><span style="color: #00AA00;">;</span> <span style="color: #00AA00;">}</span>
+<span style="color: #6666ff;">.wrapper</span> ul li div <span style="color: #00AA00;">{</span>
+    <span style="color: #000000; font-weight: bold;">text-align</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">left</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">font</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">normal</span> <span style="color: #933;">11px</span> arial<span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">line-height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">19px</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">margin</span><span style="color: #00AA00;">:</span> <span style="color: #933;">10px</span> <span style="color: #cc66cc;">0</span><span style="color: #00AA00;">;</span> <span style="color: #00AA00;">}</span>
+<span style="color: #6666ff;">.wrapper</span> ul li div a <span style="color: #00AA00;">{</span>
+    <span style="color: #000000; font-weight: bold;">display</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">inline</span><span style="color: #00AA00;">;</span> <span style="color: #00AA00;">}</span>
+<span style="color: #6666ff;">.wrapper</span> ul li div a<span style="color: #00AA00;">:</span><span style="color: #F5758F;">hover</span> <span style="color: #00AA00;">{</span>
+    <span style="color: #000000; font-weight: bold;">text-decoration</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">underline</span><span style="color: #00AA00;">;</span> <span style="color: #00AA00;">}</span>
+<span style="color: #6666ff;">.wrapper</span> ul li div hr <span style="color: #00AA00;">{</span>
+    <span style="color: #000000; font-weight: bold;">border</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">none</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">border-top</span><span style="color: #00AA00;">:</span> <span style="color: #933;">1px</span> <span style="color: #993333;">dotted</span> <span style="color: #cc00cc;">#a0a0a0</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">margin</span><span style="color: #00AA00;">:</span> <span style="color: #933;">5px</span> <span style="color: #cc66cc;">0</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">95%</span><span style="color: #00AA00;">;</span> <span style="color: #00AA00;">}</span>
+<span style="color: #6666ff;">.wrapper</span> ul li<span style="color: #00AA00;">:</span><span style="color: #F5758F;">hover</span><span style="color: #00AA00;">:</span><span style="color: #F5758F;">target</span> <span style="color: #00AA00;">{</span>
+    <span style="color: #000000; font-weight: bold;">display</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">inherit</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">padding</span><span style="color: #00AA00;">:</span> <span style="color: #933;">0px</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">padding-left</span><span style="color: #00AA00;">:</span><span style="color: #933;">15px</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">opacity</span><span style="color: #00AA00;">:</span> .97<span style="color: #00AA00;">;</span>
+    -moz-opacity<span style="color: #00AA00;">:</span> .97<span style="color: #00AA00;">;</span>
+    -webkit-transition<span style="color: #00AA00;">:</span> height <span style="color: #933;">0.4s</span> ease-in<span style="color: #00AA00;">;</span> <span style="color: #00AA00;">}</span>
+<span style="color: #6666ff;">.wrapper</span> ul li<span style="color: #cc00cc;">#a</span><span style="color: #00AA00;">:</span><span style="color: #F5758F;">hover</span><span style="color: #00AA00;">:</span><span style="color: #F5758F;">target</span> <span style="color: #00AA00;">{</span>
+    <span style="color: #000000; font-weight: bold;">height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">130px</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">350px</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#f0f9ff</span><span style="color: #00AA00;">;</span> <span style="color: #00AA00;">}</span>
+<span style="color: #6666ff;">.wrapper</span> ul li<span style="color: #cc00cc;">#b</span><span style="color: #00AA00;">:</span><span style="color: #F5758F;">hover</span><span style="color: #00AA00;">:</span><span style="color: #F5758F;">target</span> <span style="color: #00AA00;">{</span>
+    <span style="color: #000000; font-weight: bold;">height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">105px</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#ffffd6</span><span style="color: #00AA00;">;</span> <span style="color: #00AA00;">}</span>
+<span style="color: #6666ff;">.wrapper</span> ul li<span style="color: #cc00cc;">#c</span><span style="color: #00AA00;">:</span><span style="color: #F5758F;">hover</span><span style="color: #00AA00;">:</span><span style="color: #F5758F;">target</span> <span style="color: #00AA00;">{</span>
+    <span style="color: #000000; font-weight: bold;">height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">145px</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">200px</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#f8ffe8</span><span style="color: #00AA00;">;</span> <span style="color: #00AA00;">}</span>
+<span style="color: #6666ff;">.wrapper</span> ul li<span style="color: #cc00cc;">#d</span><span style="color: #00AA00;">:</span><span style="color: #F5758F;">hover</span><span style="color: #00AA00;">:</span><span style="color: #F5758F;">target</span> <span style="color: #00AA00;">{</span>
+    <span style="color: #000000; font-weight: bold;">height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">140px</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">165px</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">position</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">relative</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">float</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">right</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">margin-right</span><span style="color: #00AA00;">:</span> <span style="color: #933;">-5px</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">z-index</span><span style="color: #00AA00;">:</span> <span style="color: #cc66cc;">0</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">text-align</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">center</span><span style="color: #00AA00;">;</span>
+    <span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#f9f286</span><span style="color: #00AA00;">;</span> <span style="color: #00AA00;">}</span></pre></td></tr></tbody></table><p class="theCode" style="display:none;">.wrapper {
+    width: 600px;
+    position: absolute; }
+.wrapper ul {
+    list-style: none; }
+.wrapper ul li {
+    background-color: #F8F8F8;
+    border: 1px solid #a9a9a9;
+    display: block;
+    float: left;
+    font: bold 12px arial;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    padding-left: 15px;
+    position: absolute;
+    width: 135px;
+    z-index: 10000;
+    -webkit-box-shadow:0px 3px 5px #cacaca;
+    -moz-box-shadow:0px 3px 5px #cacaca;
+    box-shadow:0px 3px 5px #cacaca; 
+    background: linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);}
+.wrapper ul li:hover {
+    background: linear-gradient(top, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%);}
+.wrapper ul li:first-child {
+    -moz-border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px; }
+.wrapper ul li:last-child {
+    -moz-border-radius: 0 4px 4px 0;
+    -webkit-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0; }
+.wrapper ul li#b {
+    margin-left: 151px; }
+.wrapper ul li#c {
+    margin-left: 302px; }
+.wrapper ul li#d {
+    margin-left: 453px; }
+.wrapper ul li a {
+    display: block;
+    text-decoration: none;
+    color: #303030; }
+.wrapper ul li div {
+    text-align: left;
+    font: normal 11px arial;
+    line-height: 19px;
+    margin: 10px 0; }
+.wrapper ul li div a {
+    display: inline; }
+.wrapper ul li div a:hover {
+    text-decoration: underline; }
+.wrapper ul li div hr {
+    border: none;
+    border-top: 1px dotted #a0a0a0;
+    margin: 5px 0;
+    width: 95%; }
+.wrapper ul li:hover:target {
+    display: inherit;
+    padding: 0px;
+    padding-left:15px;
+    opacity: .97;
+    -moz-opacity: .97;
+    -webkit-transition: height 0.4s ease-in; }
+.wrapper ul li#a:hover:target {
+    height: 130px;
+    width: 350px;
+    background: #f0f9ff; }
+.wrapper ul li#b:hover:target {
+    height: 105px;
+    background: #ffffd6; }
+.wrapper ul li#c:hover:target {
+    height: 145px;
+    width: 200px;
+    background: #f8ffe8; }
+.wrapper ul li#d:hover:target {
+    height: 140px;
+    width: 165px;
+    position: relative;
+    float: right;
+    margin-right: -5px;
+    z-index: 0;
+    text-align: center;
+    background: #f9f286; }</p></div>
+
+<h2>Browser Compatibility</h2>
+<p><img src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/target-pseudo-class-browser-support.gif" alt="" title="target pseudo class browser support" class="alignleft size-full wp-image-1503" srcset="http://deepubalan.com/blog/wp-content/uploads/2011/06/target-pseudo-class-browser-support.gif 614w, http://deepubalan.com/blog/wp-content/uploads/2011/06/target-pseudo-class-browser-support-300x41.gif 300w" sizes="(max-width: 614px) 100vw, 614px" width="614" height="84"><br>
+This menu is fully compatible on all major modern browser versions including IE9. </p>
+<h3 style="\&quot;padding-bottom:" 0;\"="">Internet Explorer Version 6 to 8</h3>
+<p>The CSS3 pseudo class support can be obtained in <a title="Internet" href="http://deepubalan.com/blog/category/internet/">Internet</a> Explorer versions 6 to 8 with a cool award winning javascript library called <a rel="nofollow" href="http://selectivizr.com/">selectivizr</a>.
+ selectivizr is a JavaScript utility that emulates CSS3 pseudo-classes 
+and attribute selectors in Internet Explorer 6-8. Simply include the 
+script in your pages and selectivizr will do the rest. Selectivizr works
+ automatically so you don’t need any JavaScript knowledge to use it – 
+you won’t even have to modify your style sheets. Just start writing CSS3
+ selectors and they will work in IE. Selectivizr requires a JavaScript 
+library to work. If your website already uses one of the 7 supported 
+libraries you just need to add the selectivizr script to your pages. If 
+not, you will need to pick a library too.</p>
+<h2>Possible Concerns</h2>
+<p>1. Need to click the main menu to initiate the dropdown menu for the first time.<br>
+2. Since this technique uses <em>:target</em> pseudo class based in-page
+ referencing, each time the menu is clicked on a page that has 
+scrolling, the menu moves to the top of the page.<br>
+3. Lack of support from older browser versions.</p>
+<h2>Download</h2>
+<p align="center"><a href="http://deepubalan.com/blog/wp-content/plugins/download-monitor/download.php?id=9" title="Downloaded 21336 times"><img src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/download.jpg" alt="Pure CSS dropdown menu using :target pseudo class"></a></p>
+<p>You can use these menus for personal and commercial projects at free 
+of charge. What I only expect in return is your comments and backlinks, 
+if you like it. You are not allowed to sell or redistribute these menus 
+anywhere else. If you like to share this menu please link to this 
+article.<br>
+Do not provide the direct download link nor upload these menus onto 
+other servers for your own share, without my permission. If you want to 
+spread the words, just link to this article.</p>
+<p><a rel="nofollow" href="http://creativecommons.org/licenses/by/2.5/in/"><img alt="Creative Commons License" style="border-width:0" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/88x31.png"></a><br><span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/StillImage" property="dc:title" rel="dc:type">Pure CSS DropDown Menu using :target pseudo class</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://deepubalan.com/" property="cc:attributionName" rel="cc:attributionURL">Deepu Balan</a> is licensed under a <a rel="nofollow" href="http://creativecommons.org/licenses/by/2.5/in/">Creative Commons Attribution 2.5 India License</a>. Based on a work at <a xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://deepubalan.com/" rel="dc:source">deepubalan.com</a>.</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" class="share-twitter sd-button share-icon" href="http://deepubalan.com/blog/2011/06/17/free-pure-css-dropdown-menu-using-target-pseudo-class/?share=twitter&amp;nb=1" title="Click to share on Twitter" id="sharing-twitter-1508"><span>Twitter</span></a></li><li class="share-facebook"><a rel="nofollow" class="share-facebook sd-button share-icon" href="http://deepubalan.com/blog/2011/06/17/free-pure-css-dropdown-menu-using-target-pseudo-class/?share=facebook&amp;nb=1" title="Share on Facebook" id="sharing-facebook-1508"><span>Facebook</span></a></li><li class="share-google-plus-1"><a rel="nofollow" class="share-google-plus-1 sd-button share-icon" href="http://deepubalan.com/blog/2011/06/17/free-pure-css-dropdown-menu-using-target-pseudo-class/?share=google-plus-1&amp;nb=1" title="Click to share on Google+" id="sharing-google-1508"><span>Google +1</span></a></li><li><a href="#" class="sharing-anchor sd-button share-more"><span>More</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-linkedin"><a rel="nofollow" class="share-linkedin sd-button share-icon" href="http://deepubalan.com/blog/2011/06/17/free-pure-css-dropdown-menu-using-target-pseudo-class/?share=linkedin&amp;nb=1" title="Click to share on LinkedIn" id="sharing-linkedin-1508"><span>LinkedIn</span></a></li><li class="share-stumbleupon"><a rel="nofollow" class="share-stumbleupon sd-button share-icon" href="http://deepubalan.com/blog/2011/06/17/free-pure-css-dropdown-menu-using-target-pseudo-class/?share=stumbleupon&amp;nb=1" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li><li class="share-end"></li><li class="share-reddit"><a rel="nofollow" class="share-reddit sd-button share-icon" href="http://deepubalan.com/blog/2011/06/17/free-pure-css-dropdown-menu-using-target-pseudo-class/?share=reddit&amp;nb=1" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-digg"><a rel="nofollow" class="share-digg sd-button share-icon" href="http://deepubalan.com/blog/2011/06/17/free-pure-css-dropdown-menu-using-target-pseudo-class/?share=digg&amp;nb=1" title="Click to Digg this post"><span>Digg</span></a></li><li class="share-end"></li><li class="share-pinterest"><a rel="nofollow" class="share-pinterest sd-button share-icon" href="http://deepubalan.com/blog/2011/06/17/free-pure-css-dropdown-menu-using-target-pseudo-class/?share=pinterest&amp;nb=1" title="Click to share on Pinterest"><span>Pinterest</span></a></li><li class="share-email share-service-visible"><a rel="nofollow" class="share-email sd-button share-icon" href="http://deepubalan.com/blog/2011/06/17/free-pure-css-dropdown-menu-using-target-pseudo-class/?share=email&amp;nb=1" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-end"></li><li class="share-print"><a rel="nofollow" class="share-print sd-button share-icon" href="http://deepubalan.com/blog/2011/06/17/free-pure-css-dropdown-menu-using-target-pseudo-class/#print" title="Click to print"><span>Print</span></a></li><li class="share-end"></li></ul></div></div></div></div></div><div class="yarpp-related">
+<h2>Related posts:</h2><ol>
+<li><a href="http://deepubalan.com/blog/2012/02/14/notify-pure-css-notification-bar-using-target-pseudo-class/" rel="bookmark" title="Notify: Pure CSS notification bar using :target pseudo class">Notify: Pure CSS notification bar using :target pseudo class </a></li>
+<li><a href="http://deepubalan.com/blog/2012/06/11/pure-css-html-accordion-using-details-summary-elements/" rel="bookmark" title="Pure CSS – HTML accordion using Details &amp; Summary elements">Pure CSS – HTML accordion using Details &amp; Summary elements </a></li>
+<li><a href="http://deepubalan.com/blog/2010/11/27/text-overflow-css3-property-explained-pure-css-solution-to-get-ellipsis/" rel="bookmark" title="Text-overflow CSS3 property explained – Pure CSS solution to get ellipsis">Text-overflow CSS3 property explained – Pure CSS solution to get ellipsis </a></li>
+<li><a href="http://deepubalan.com/blog/2010/01/18/cool-sprites-free-overlapped-css-menu-using-css-sprites/" rel="bookmark" title="Cool Sprites – Free overlapped CSS menu using CSS Sprites">Cool Sprites – Free overlapped CSS menu using CSS Sprites </a></li>
+<li><a href="http://deepubalan.com/blog/2010/03/29/rgba-vs-opacity-the-difference-explained/" rel="bookmark" title="RGBa vs Opacity: The Difference Explained">RGBa vs Opacity: The Difference Explained </a></li>
+</ol>
+</div>
+
+
+
+<div id="author-info"><!--Author Info-->
+    <div id="author-image">
+    	<a style="float: left;margin-right: 10px;" href="https://plus.google.com/112976466033286689547/"><img alt="" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/817a7c442d5c2b18f39139d36357af0e.jpg" srcset="http://2.gravatar.com/avatar/817a7c442d5c2b18f39139d36357af0e?s=160&amp;r=g 2x" class="avatar avatar-80 photo grav-hashed" id="grav-817a7c442d5c2b18f39139d36357af0e-0" width="80" height="80"></a>
+
+        Written by <b><a href="https://plus.google.com/112976466033286689547/" title="Visit Deepu Balan’s website" rel="author external">Deepu Balan</a></b>
+        <p><a href="https://plus.google.com/112976466033286689547/">Deepu Balan</a> is a self-taught web UI designer and developer who is really passionate about web design related stuffs. 
+
+You can follow his updates on twitter <a href="http://www.twitter.com/bdeepu">@bdeepu</a></p>
+    </div>
+</div><!--Author Info-->
+
+
+                <p class="postmetadata">
+                <strong>Tags: </strong><a href="http://deepubalan.com/blog/tag/css-dropdown-menu/" rel="tag">css dropdown menu</a>, <a href="http://deepubalan.com/blog/tag/css3/" rel="tag">css3</a>, <a href="http://deepubalan.com/blog/tag/pure-css/" rel="tag">pure css</a>                </p><div style="display: none;"><a href="http://deepubalan.com/blog/2011/06/17/free-pure-css-dropdown-menu-using-target-pseudo-class/#comments">49 Comments »</a> </div>
+                <p></p>
+
+
+            <div class="comments-template">
+                            </div>
+ 
+            </div>
+ 
+    </div>
+ 
+ 
+    <div class="navigation">
+        &lt; <a href="http://deepubalan.com/blog/2011/05/04/how-classifieds-can-help-your-freelance-business/" rel="prev">How classifieds can help your freelance business</a> <span style="float: right;"> <a href="http://deepubalan.com/blog/2011/07/20/the-smart-phone-vs-the-computer/" rel="next">The Smart Phone vs the Computer</a> &gt;</span>
+    </div>
+ 
+  </div>
+
+ 
+<div class="sidebar">
+<li id="text-6" class="BlockContent widget_text">			<div class="textwidget"><div class="smbox" style="height:280px;">
+<div style="width: 100%; text-align: center; margin-top: 10px;margin-left: -10px;">
+<script type="text/javascript"><!--
+	google_ad_client = "ca-pub-9489985473109490";
+	/* DeepuBalan - 300x250 */
+	google_ad_slot = "8078578466";
+	google_ad_width = 300;
+	google_ad_height = 250;
+	//-->
+	</script>
+	<script type="text/javascript" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/show_ads.js"></script>
+</div>
+</div></div>
+		<div style="clear:both"></div></li><li id="search-3" class="BlockContent widget_search"><h2 class="widgettitle">Search this site</h2><form role="search" method="get" id="searchform" class="searchform" action="http://deepubalan.com/blog/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form><div style="clear:both"></div></li>		<li id="recent-posts-4" class="BlockContent widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>		<ul>
+					<li>
+				<a href="http://deepubalan.com/blog/2018/08/30/must-have-technologies-in-mobile-app-development/">Top 8 Must-have Technologies in Mobile App Development</a>
+						</li>
+					<li>
+				<a href="http://deepubalan.com/blog/2018/05/31/android-app-development-for-a-newbie/">How to Start Android App Development for a Newbie</a>
+						</li>
+					<li>
+				<a href="http://deepubalan.com/blog/2018/05/22/must-learn-facts-about-social-media-and-seo/">Few Facts about Social Media &amp; SEO that You Must Know</a>
+						</li>
+					<li>
+				<a href="http://deepubalan.com/blog/2018/04/17/optimize-your-digital-marketing-strategy/">How to Optimize Digital Marketing Strategy for Better Conversions?</a>
+						</li>
+					<li>
+				<a href="http://deepubalan.com/blog/2017/05/04/the-5-most-fundamental-components-of-a-successful-ecommerce-store/">The 5 most fundamental components of a successful eCommerce store website elaborated</a>
+						</li>
+				</ul>
+		<div style="clear:both"></div></li>		<li id="collapsarch-3" class="BlockContent widget_collapsarch"><h2 class="widgettitle">Archives</h2><ul id="widget-collapsarch-3-top" class="collapsing archives list">
+  <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2018/">2018  <span class="yearCount">(4)</span>
+</a>
+</span>    <div style="display:none" id="collapsArch-2018:3">
+    <ul>
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2018/08/">August  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2018-8:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2018/05/">May  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2018-5:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2018/04/">April  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2018-4:3">
+        </div>
+      </li> <!-- close expanded month --> 
+  </ul>
+     </div>
+  </li> <!-- end year -->
+  <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2017/">2017  <span class="yearCount">(6)</span>
+</a>
+</span>    <div style="display:none" id="collapsArch-2017:3">
+    <ul>
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2017/05/">May  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2017-5:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2017/04/">April  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2017-4:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2017/03/">March  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2017-3:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2017/02/">February  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2017-2:3">
+        </div>
+      </li> <!-- close expanded month --> 
+  </ul>
+     </div>
+  </li> <!-- end year -->
+  <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2016/">2016  <span class="yearCount">(6)</span>
+</a>
+</span>    <div style="display:none" id="collapsArch-2016:3">
+    <ul>
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2016/12/">December  <span class="monthCount">(3)</span>
+</a></span>        <div style="display:none" id="collapsArch-2016-12:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2016/02/">February  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2016-2:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2016/01/">January  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2016-1:3">
+        </div>
+      </li> <!-- close expanded month --> 
+  </ul>
+     </div>
+  </li> <!-- end year -->
+  <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2015/">2015  <span class="yearCount">(7)</span>
+</a>
+</span>    <div style="display:none" id="collapsArch-2015:3">
+    <ul>
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2015/12/">December  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2015-12:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2015/06/">June  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2015-6:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2015/04/">April  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2015-4:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2015/02/">February  <span class="monthCount">(3)</span>
+</a></span>        <div style="display:none" id="collapsArch-2015-2:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2015/01/">January  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2015-1:3">
+        </div>
+      </li> <!-- close expanded month --> 
+  </ul>
+     </div>
+  </li> <!-- end year -->
+  <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2014/">2014  <span class="yearCount">(8)</span>
+</a>
+</span>    <div style="display:none" id="collapsArch-2014:3">
+    <ul>
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2014/12/">December  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2014-12:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2014/11/">November  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2014-11:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2014/09/">September  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2014-9:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2014/08/">August  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2014-8:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2014/07/">July  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2014-7:3">
+        </div>
+      </li> <!-- close expanded month --> 
+  </ul>
+     </div>
+  </li> <!-- end year -->
+  <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2013/">2013  <span class="yearCount">(27)</span>
+</a>
+</span>    <div style="display:none" id="collapsArch-2013:3">
+    <ul>
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2013/12/">December  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2013-12:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2013/10/">October  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2013-10:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2013/09/">September  <span class="monthCount">(5)</span>
+</a></span>        <div style="display:none" id="collapsArch-2013-9:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2013/08/">August  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2013-8:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2013/07/">July  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2013-7:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2013/06/">June  <span class="monthCount">(3)</span>
+</a></span>        <div style="display:none" id="collapsArch-2013-6:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2013/05/">May  <span class="monthCount">(3)</span>
+</a></span>        <div style="display:none" id="collapsArch-2013-5:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2013/04/">April  <span class="monthCount">(3)</span>
+</a></span>        <div style="display:none" id="collapsArch-2013-4:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2013/03/">March  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2013-3:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2013/02/">February  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2013-2:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2013/01/">January  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2013-1:3">
+        </div>
+      </li> <!-- close expanded month --> 
+  </ul>
+     </div>
+  </li> <!-- end year -->
+  <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2012/">2012  <span class="yearCount">(27)</span>
+</a>
+</span>    <div style="display:none" id="collapsArch-2012:3">
+    <ul>
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2012/12/">December  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2012-12:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2012/11/">November  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2012-11:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2012/10/">October  <span class="monthCount">(5)</span>
+</a></span>        <div style="display:none" id="collapsArch-2012-10:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2012/08/">August  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2012-8:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2012/07/">July  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2012-7:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2012/06/">June  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2012-6:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2012/05/">May  <span class="monthCount">(3)</span>
+</a></span>        <div style="display:none" id="collapsArch-2012-5:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2012/04/">April  <span class="monthCount">(5)</span>
+</a></span>        <div style="display:none" id="collapsArch-2012-4:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2012/03/">March  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2012-3:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2012/02/">February  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2012-2:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2012/01/">January  <span class="monthCount">(3)</span>
+</a></span>        <div style="display:none" id="collapsArch-2012-1:3">
+        </div>
+      </li> <!-- close expanded month --> 
+  </ul>
+     </div>
+  </li> <!-- end year -->
+  <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2011/">2011  <span class="yearCount">(8)</span>
+</a>
+</span>    <div style="display:none" id="collapsArch-2011:3">
+    <ul>
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2011/12/">December  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2011-12:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2011/08/">August  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2011-8:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2011/07/">July  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2011-7:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2011/06/">June  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2011-6:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2011/05/">May  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2011-5:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2011/04/">April  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2011-4:3">
+        </div>
+      </li> <!-- close expanded month --> 
+  </ul>
+     </div>
+  </li> <!-- end year -->
+  <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2010/">2010  <span class="yearCount">(18)</span>
+</a>
+</span>    <div style="display:none" id="collapsArch-2010:3">
+    <ul>
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2010/11/">November  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2010-11:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2010/08/">August  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2010-8:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2010/07/">July  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2010-7:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2010/06/">June  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2010-6:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2010/05/">May  <span class="monthCount">(1)</span>
+</a></span>        <div style="display:none" id="collapsArch-2010-5:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2010/04/">April  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2010-4:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2010/03/">March  <span class="monthCount">(3)</span>
+</a></span>        <div style="display:none" id="collapsArch-2010-3:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2010/02/">February  <span class="monthCount">(2)</span>
+</a></span>        <div style="display:none" id="collapsArch-2010-2:3">
+       </div>
+      </li> <!-- close expanded month --> 
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2010/01/">January  <span class="monthCount">(4)</span>
+</a></span>        <div style="display:none" id="collapsArch-2010-1:3">
+        </div>
+      </li> <!-- close expanded month --> 
+  </ul>
+     </div>
+  </li> <!-- end year -->
+  <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2009/">2009  <span class="yearCount">(4)</span>
+</a>
+</span>    <div style="display:none" id="collapsArch-2009:3">
+    <ul>
+      <li class="collapsing archives expand"><span title="click to expand" class="collapsing archives expand"><span class="sym">[+]</span><a href="http://deepubalan.com/blog/2009/12/">December  <span class="monthCount">(4)</span>
+</a></span>        <div style="display:none" id="collapsArch-2009-12:3">
+        </div>
+    </li> <!-- close month -->
+  </ul></div></li> <!-- end of collapsing archives --><li style="display:none"><script type="text/javascript">
+// <![CDATA[
+/* These variables are part of the Collapsing Archives Plugin
+   * version: 2.0.4
+   * revision: $Id: collapsArch.php 1567317 2017-01-03 18:18:41Z robfelty $
+   * Copyright 2008 Robert Felty (robfelty.com)
+           */
+try { collapsItems['catTest'] = 'test'; } catch (err) { collapsItems = new Object(); }
+collapsItems['collapsArch-2018-8:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2018/08/30/must-have-technologies-in-mobile-app-development/\' title=\'Top 8 Must-have Technologies in Mobile App Development\'>Top 8 Must-have Technologies in Mobile App Development</a></li></ul>';
+collapsItems['collapsArch-2018-5:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2018/05/31/android-app-development-for-a-newbie/\' title=\'How to Start Android App Development for a Newbie\'>How to Start Android App Development for a Newbie</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2018/05/22/must-learn-facts-about-social-media-and-seo/\' title=\'Few Facts about Social Media & SEO that You Must Know\'>Few Facts about Social Media & SEO that You Must Know</a></li></ul>';
+collapsItems['collapsArch-2018-4:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2018/04/17/optimize-your-digital-marketing-strategy/\' title=\'How to Optimize Digital Marketing Strategy for Better Conversions?\'>How to Optimize Digital Marketing Strategy for Better Conversions?</a></li></ul>';
+collapsItems['collapsArch-2017-5:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2017/05/04/the-5-most-fundamental-components-of-a-successful-ecommerce-store/\' title=\'The 5 most fundamental components of a successful eCommerce store website elaborated\'>The 5 most fundamental components of a successful eCommerce store website elaborated</a></li></ul>';
+collapsItems['collapsArch-2017-4:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2017/04/25/all-about-mobile-first-indexing-and-its-importance/\' title=\'What is mobile first indexing and how will it affect your business?\'>What is mobile first indexing and how will it affect your business?</a></li></ul>';
+collapsItems['collapsArch-2017-3:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2017/03/17/wordpress-templates-vs-custom-themes-what-to-choose/\' title=\'WordPress Templates Vs Custom Themes - What To Choose\'>WordPress Templates Vs Custom Themes - What To Choose</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2017/03/01/a-guide-to-boost-visibility-of-your-mobile-application-on-google-play-store/\' title=\'A guide to boost visibility of your mobile application on google play store\'>A guide to boost visibility of your mobile application on google play store</a></li></ul>';
+collapsItems['collapsArch-2017-2:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2017/02/23/ionic-2-vs-ionic-1-what-works-better-for-your-mobile-app-development/\' title=\'Ionic 2 Vs Ionic 1 - What Works Better For Your Mobile App Development?   \'>Ionic 2 Vs Ionic 1 - What Works Better For Your Mobile App Development?   </a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2017/02/09/stun-and-amaze-with-your-website-design/\' title=\'Stun and Amaze With Your Website Design\'>Stun and Amaze With Your Website Design</a></li></ul>';
+collapsItems['collapsArch-2016-12:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2016/12/17/dreamweaver-tips-for-web-developers/\' title=\'Tips for Using Dreamweaver for Web Design\'>Tips for Using Dreamweaver for Web Design</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2016/12/10/mobile-app-failure-reason/\' title=\'7 Out of 10 Mobile Apps Fail Due to Lack of Strategy\'>7 Out of 10 Mobile Apps Fail Due to Lack of Strategy</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2016/12/02/7-surefire-ways-to-improve-user-engagement-on-your-website/\' title=\'7 Surefire Ways to Improve User Engagement on Your Website\'>7 Surefire Ways to Improve User Engagement on Your Website</a></li></ul>';
+collapsItems['collapsArch-2016-2:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2016/02/14/factors-that-affects-mobile-app-development-cost/\' title=\'Top Factors that Has a Great Impact on Mobile App Development Cost\'>Top Factors that Has a Great Impact on Mobile App Development Cost</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2016/02/04/alpha-anywhere-integration-with-phonegap-build-the-why-and-how-of-it/\' title=\'Integrating Alpha Anywhere With PhoneGap Build: The Why and How of It?\'>Integrating Alpha Anywhere With PhoneGap Build: The Why and How of It?</a></li></ul>';
+collapsItems['collapsArch-2016-1:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2016/01/14/top-qualit-responsive-wordpress-themes-for-2016/\' title=\'10 Best Responsive WordPress Themes for 2016\'>10 Best Responsive WordPress Themes for 2016</a></li></ul>';
+collapsItems['collapsArch-2015-12:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2015/12/22/5-mistakes-to-avoid-when-user-testing-your-mobile-app/\' title=\'5 Mistakes to Avoid When User Testing Your Mobile App\'>5 Mistakes to Avoid When User Testing Your Mobile App</a></li></ul>';
+collapsItems['collapsArch-2015-6:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2015/06/15/major-web-redesigning-considerations-you-cant-ignore/\' title=\'Major web redesigning considerations you can’t ignore!\'>Major web redesigning considerations you can’t ignore!</a></li></ul>';
+collapsItems['collapsArch-2015-4:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2015/04/13/tips-to-increase-efficiency-of-design-workflow/\' title=\'5 Easy-to-follow tips to increase efficiency of design workflow\'>5 Easy-to-follow tips to increase efficiency of design workflow</a></li></ul>';
+collapsItems['collapsArch-2015-2:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2015/02/23/custom-writing-of-essays-from-expert-panels/\' title=\'Custom writing of essays from Expert panels\'>Custom writing of essays from Expert panels</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2015/02/13/ground-rules-for-implementing-slider-in-mobile-applications/\' title=\'Ground rules for implementing slider in mobile applications\'>Ground rules for implementing slider in mobile applications</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2015/02/03/reactjs-vs-angularjs-a-quick-comparison/\' title=\'Credible reasons for you to choose ReactJS over AngularJS\'>Credible reasons for you to choose ReactJS over AngularJS</a></li></ul>';
+collapsItems['collapsArch-2015-1:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2015/01/17/insight-into-web-apps-widgets-development/\' title=\'An insight into web apps & widgets development with better accessibility\'>An insight into web apps & widgets development with better accessibility</a></li></ul>';
+collapsItems['collapsArch-2014-12:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2014/12/22/simple-tips-for-newbies-to-get-you-started/\' title=\'New to mobile design? 5 simple tips to get you started\'>New to mobile design? 5 simple tips to get you started</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2014/12/07/seo-marketing-all-that-you-wanted-to-know/\' title=\'SEO Marketing: The prospect you might have ignored\'>SEO Marketing: The prospect you might have ignored</a></li></ul>';
+collapsItems['collapsArch-2014-11:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2014/11/07/how-to-create-a-blog-within-a-drupal-website/\' title=\'How to create a blog within a drupal powered website?\'>How to create a blog within a drupal powered website?</a></li></ul>';
+collapsItems['collapsArch-2014-9:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2014/09/30/pros-cons-of-using-hybrid-mobile-app-development-in-your-business/\' title=\'Pros & cons of using hybrid mobile app development in your business\'>Pros & cons of using hybrid mobile app development in your business</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2014/09/29/how-to-optimize-the-image-use-in-html-and-css3/\' title=\'How to optimize the image use in HTML and CSS3?\'>How to optimize the image use in HTML and CSS3?</a></li></ul>';
+collapsItems['collapsArch-2014-8:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2014/08/20/magento-vs-shopify-for-ecommerc/\' title=\'Magento vs Shopify - which one is ahead of the pack\'>Magento vs Shopify - which one is ahead of the pack</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2014/08/12/photoshop-tips-to-make-psd-to-html-conversion-easy/\' title=\'Photoshop Tips to Make PSD to HTML Conversion a Hassle-Free Experience\'>Photoshop Tips to Make PSD to HTML Conversion a Hassle-Free Experience</a></li></ul>';
+collapsItems['collapsArch-2014-7:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2014/07/03/responsive-web-design-as-the-prime-seo-strategy/\' title=\'Why Responsive Design Should Be Your Prime SEO Strategy?\'>Why Responsive Design Should Be Your Prime SEO Strategy?</a></li></ul>';
+collapsItems['collapsArch-2013-12:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/12/20/5-beginner-level-tips-to-adobe-photoshop/\' title=\'5 Basic Adobe Photoshop Tips for Beginners \'>5 Basic Adobe Photoshop Tips for Beginners </a></li></ul>';
+collapsItems['collapsArch-2013-10:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/10/28/useimages-to-enhance-the-potential-of-your-website/\' title=\'Make the images work to enhance the potential of your website\'>Make the images work to enhance the potential of your website</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/10/04/bad-website-navigation-example/\' title=\'Examples of bad website navigation system\'>Examples of bad website navigation system</a></li></ul>';
+collapsItems['collapsArch-2013-9:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/09/27/how-to-make-your-website-retina-ready/\' title=\'Making your website Retina Ready  - The how to guide\'>Making your website Retina Ready  - The how to guide</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/09/13/top-cross-platform-and-cross-device-web-application-frameworks/\' title=\'15 best cross-platform and cross-device web application development frameworks\'>15 best cross-platform and cross-device web application development frameworks</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/09/08/ravishing-and-bold-wordpress-themes-for-download/\' title=\'11 Ravishing and bold wordpress themes for you\'>11 Ravishing and bold wordpress themes for you</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/09/06/useful-tips-to-boost-joomla-website-performance/\' title=\'4 Astounding ways to boost the performance of Joomla website \'>4 Astounding ways to boost the performance of Joomla website </a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/09/03/why-drupal-is-more-seo-friendly-than-wordpress/\' title=\'5 Startling facts making Drupal an SEO friendly platform\'>5 Startling facts making Drupal an SEO friendly platform</a></li></ul>';
+collapsItems['collapsArch-2013-8:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/08/20/premium-quality-free-html-css-templates/\' title=\'High quality HTML CSS website templates for free download\'>High quality HTML CSS website templates for free download</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/08/03/useful-tools-for-responsive-web-design/\' title=\'Collection of really useful responsive web design tools\'>Collection of really useful responsive web design tools</a></li></ul>';
+collapsItems['collapsArch-2013-7:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/07/25/quickly-fix-wordpress-security-vulnerabilities/\' title=\'How to fix wordpress security issues & vulnerabilities\'>How to fix wordpress security issues & vulnerabilities</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/07/03/is-tumblr-an-upcoming-powerful-cms/\' title=\'Will tumblr become the next wordpress?\'>Will tumblr become the next wordpress?</a></li></ul>';
+collapsItems['collapsArch-2013-6:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/06/25/joomla-ecommerce-virtuemart-vs-redshop/\' title=\'What is best for Joomla Ecommerce? Virtuemart or redSHOP\'>What is best for Joomla Ecommerce? Virtuemart or redSHOP</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/06/22/get-rid-of-broken-links-using-drupal-pathologic-module/\' title=\'Drupal Pathologic Module Best Solution to Get Rid of Broken Links\'>Drupal Pathologic Module Best Solution to Get Rid of Broken Links</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/06/02/premium-quality-free-website-templates/\' title=\'Collection of premium quality free HTML CSS PSD website templates\'>Collection of premium quality free HTML CSS PSD website templates</a></li></ul>';
+collapsItems['collapsArch-2013-5:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/05/15/sell-your-photograph-online/\' title=\'How to sell your photos online\'>How to sell your photos online</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/05/14/brilliant-corporate-logo-rebrandings/\' title=\'20 brilliant examples of corporate logo rebranding attempts\'>20 brilliant examples of corporate logo rebranding attempts</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/05/08/fresh-creative-and-inspiring-logos/\' title=\'Fresh collection of creative and inspiring logo designs\'>Fresh collection of creative and inspiring logo designs</a></li></ul>';
+collapsItems['collapsArch-2013-4:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/04/27/fresh-newly-released-stunning-free-fonts/\' title=\'Collection newly released stunning free fonts for download\'>Collection newly released stunning free fonts for download</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/04/24/social-media-and-seo-partnership-for-a-brand/\' title=\'A Marriage between Social Media and SEO - An Important Partnership for a Brand\'>A Marriage between Social Media and SEO - An Important Partnership for a Brand</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/04/01/cool-responsive-web-design-frameworks/\' title=\'Different responsive frameworks for developing cool webites in a jiffy\'>Different responsive frameworks for developing cool webites in a jiffy</a></li></ul>';
+collapsItems['collapsArch-2013-3:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/03/14/beginner-level-html-css-webdesign-tutorials/\' title=\'20 Unbelievably easy HTML and CSS web designing tutorials for beginners\'>20 Unbelievably easy HTML and CSS web designing tutorials for beginners</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/03/10/fresh-online-utilities-for-designers/\' title=\'Collection of fresh and useful online utilities for designers\'>Collection of fresh and useful online utilities for designers</a></li></ul>';
+collapsItems['collapsArch-2013-2:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/02/11/how-to-create-a-bold-website/\' title=\'How to create a BOLD website\'>How to create a BOLD website</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/02/07/designing-personalizing-and-printing-of-bookmarks/\' title=\'Bookmark printing designing and personalizing\'>Bookmark printing designing and personalizing</a></li></ul>';
+collapsItems['collapsArch-2013-1:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/01/08/five-reasons-to-use-dashed-or-dotted-lines-in-web-design/\' title=\'Five reasons to use dashed or dotted lines in web design\'>Five reasons to use dashed or dotted lines in web design</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2013/01/05/mascot-to-give-a-makeover-to-your-old-and-boring-website/\' title=\'Mascot to give a makeover to your old and boring website\'>Mascot to give a makeover to your old and boring website</a></li></ul>';
+collapsItems['collapsArch-2012-12:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/12/18/showcase-of-inspiring-postcard-designs/\' title=\'Showcase of inspiring postcard designs\'>Showcase of inspiring postcard designs</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/12/15/beautiful-brochure-designs-for-inspiration/\' title=\'Beautiful brochure designs for your inspiration\'>Beautiful brochure designs for your inspiration</a></li></ul>';
+collapsItems['collapsArch-2012-11:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/11/25/collection-stunningly-beautiful-and-realistic-pencil-sketches/\' title=\'Collection of stunningly beautiful and realistic pencil sketches\'>Collection of stunningly beautiful and realistic pencil sketches</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/11/03/5-reasons-bloggers-dont-need-seo/\' title=\'5 Reasons Bloggers Don’t Need SEO\'>5 Reasons Bloggers Don’t Need SEO</a></li></ul>';
+collapsItems['collapsArch-2012-10:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/10/29/landing-page-elements-that-can-drive-real-conversions/\' title=\'Landing Page Elements that Can Drive Real Conversions\'>Landing Page Elements that Can Drive Real Conversions</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/10/25/few-important-web-hosting-tips-for-your-website/\' title=\'Few important web hosting tips for your website\'>Few important web hosting tips for your website</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/10/06/showcase-of-colorful-high-resolution-background-images/\' title=\'Showcase of colorful high resolution background images\'>Showcase of colorful high resolution background images</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/10/05/collection-of-beautiful-google-plus-profile-cover-images/\' title=\'Collection of beautiful google plus profile cover images\'>Collection of beautiful google plus profile cover images</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/10/04/collection-of-beautiful-and-creative-brochure-designs/\' title=\'Collection of beautiful and creative brochure designs\'>Collection of beautiful and creative brochure designs</a></li></ul>';
+collapsItems['collapsArch-2012-8:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/08/21/best-websites-for-sourcing-copyright-free-images/\' title=\'Best Websites for Sourcing Copyright Free Images\'>Best Websites for Sourcing Copyright Free Images</a></li></ul>';
+collapsItems['collapsArch-2012-7:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/07/31/creating-mobile-optimized-websites-using-wordpress/\' title=\'Creating Mobile-Optimized Websites Using Wordpress\'>Creating Mobile-Optimized Websites Using Wordpress</a></li></ul>';
+collapsItems['collapsArch-2012-6:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/06/27/showcase-of-creative-facebook-timeline-cover-images/\' title=\'Showcase of creative facebook timeline cover images\'>Showcase of creative facebook timeline cover images</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/06/11/pure-css-html-accordion-using-details-summary-elements/\' title=\'Pure CSS - HTML accordion using Details & Summary elements\'>Pure CSS - HTML accordion using Details & Summary elements</a></li></ul>';
+collapsItems['collapsArch-2012-5:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/05/24/collection-of-black-color-wallpapers-and-background-images/\' title=\'Collection of black color wallpapers and background images\'>Collection of black color wallpapers and background images</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/05/18/do-web-designers-need-to-know-coding/\' title=\'Do web designers need to know coding?\'>Do web designers need to know coding?</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/05/01/why-is-your-health-important-as-a-web-designer/\' title=\'Why is your health important as a web designer\'>Why is your health important as a web designer</a></li></ul>';
+collapsItems['collapsArch-2012-4:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/04/26/collection-of-stunningly-beautiful-flyers-or-pamphlets/\' title=\'Collection of stunningly beautiful flyers or pamphlets\'>Collection of stunningly beautiful flyers or pamphlets</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/04/24/7-significant-things-not-to-forget-when-launching-your-website/\' title=\'7 “insignificant” things not to forget when launching your website\'>7 “insignificant” things not to forget when launching your website</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/04/24/showcase-of-20-elegant-business-cards-in-black-and-white/\' title=\'Showcase of 20+ elegant business cards in black and white\'>Showcase of 20+ elegant business cards in black and white</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/04/21/showcase-of-beautiful-postcard-designs/\' title=\'Showcase of beautiful postcard designs\'>Showcase of beautiful postcard designs</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/04/13/the-font-phenomena-a-closer-look-at-typography/\' title=\'The Font Phenomena - A Closer Look at Typography\'>The Font Phenomena - A Closer Look at Typography</a></li></ul>';
+collapsItems['collapsArch-2012-3:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/03/19/20-handy-free-online-tools-for-web-designers-and-developers/\' title=\'20+ handy free online tools for web designers and developers\'>20+ handy free online tools for web designers and developers</a></li></ul>';
+collapsItems['collapsArch-2012-2:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/02/14/notify-pure-css-notification-bar-using-target-pseudo-class/\' title=\'Notify: Pure CSS notification bar using :target pseudo class\'>Notify: Pure CSS notification bar using :target pseudo class</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/02/07/three-reasons-qr-codes-dont-work-for-now/\' title=\'Three reasons QR codes don\'t work... for now\'>Three reasons QR codes don\'t work... for now</a></li></ul>';
+collapsItems['collapsArch-2012-1:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/01/26/collection-of-stunningly-beautiful-nature-wallpapers/\' title=\'Collection of stunningly beautiful nature wallpapers\'>Collection of stunningly beautiful nature wallpapers</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/01/09/collection-of-uniquely-beautiful-business-cards/\' title=\'Collection of uniquely beautiful business cards\'>Collection of uniquely beautiful business cards</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2012/01/03/few-things-to-remember-while-designing-a-webstore-front-page/\' title=\'Few things to remember while designing a webstore front page\'>Few things to remember while designing a webstore front page</a></li></ul>';
+collapsItems['collapsArch-2011-12:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2011/12/25/5-factors-that-contribute-to-the-evolution-of-web-design/\' title=\'5 factors that contribute to the evolution of web design\'>5 factors that contribute to the evolution of web design</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2011/12/06/chrome-vs-firefox-how-chrome-overtook-firefox-this-time/\' title=\'Chrome vs Firefox - How chrome overtook firefox this time\'>Chrome vs Firefox - How chrome overtook firefox this time</a></li></ul>';
+collapsItems['collapsArch-2011-8:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2011/08/31/collection-of-beautiful-and-colorful-ipad-wallpapers/\' title=\'Collection of beautiful and colorful iPad wallpapers\'>Collection of beautiful and colorful iPad wallpapers</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2011/08/10/a-beginners-guide-to-social-media-marketing/\' title=\'A Beginners Guide To Social Media Marketing\'>A Beginners Guide To Social Media Marketing</a></li></ul>';
+collapsItems['collapsArch-2011-7:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2011/07/20/the-smart-phone-vs-the-computer/\' title=\'The Smart Phone vs the Computer\'>The Smart Phone vs the Computer</a></li></ul>';
+collapsItems['collapsArch-2011-6:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2011/06/17/free-pure-css-dropdown-menu-using-target-pseudo-class/\' title=\'Pure CSS DropDown Menu using :target pseudo class\'>Pure CSS DropDown Menu using :target pseudo class</a></li></ul>';
+collapsItems['collapsArch-2011-5:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2011/05/04/how-classifieds-can-help-your-freelance-business/\' title=\'How classifieds can help your freelance business\'>How classifieds can help your freelance business</a></li></ul>';
+collapsItems['collapsArch-2011-4:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2011/04/27/collection-of-more-than-35-beautiful-cartoon-wallpapers-for-kids/\' title=\'Collection of more than 35 beautiful cartoon wallpapers for kids\'>Collection of more than 35 beautiful cartoon wallpapers for kids</a></li></ul>';
+collapsItems['collapsArch-2010-11:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2010/11/27/text-overflow-css3-property-explained-pure-css-solution-to-get-ellipsis/\' title=\'Text-overflow CSS3 property explained - Pure CSS solution to get ellipsis\'>Text-overflow CSS3 property explained - Pure CSS solution to get ellipsis</a></li></ul>';
+collapsItems['collapsArch-2010-8:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2010/08/06/free-high-resolution-twitter-bird-icons-and-images/\' title=\'Free high resolution twitter bird icons and images\'>Free high resolution twitter bird icons and images</a></li></ul>';
+collapsItems['collapsArch-2010-7:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2010/07/17/delicious-bookmark-wordpress-plugin/\' title=\'My first wordpress plugin – Delicious Bookmark Button with realtime bookmark count\'>My first wordpress plugin – Delicious Bookmark Button with realtime bookmark count</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2010/07/03/i%e2%80%99ve-just-redesigned/\' title=\'I’ve just redesigned\'>I’ve just redesigned</a></li></ul>';
+collapsItems['collapsArch-2010-6:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2010/06/17/the-dry-principle-in-web-design/\' title=\'The DRY Principle in web design\'>The DRY Principle in web design</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2010/06/01/collection-of-beautiful-wallpapers-in-orange-color/\' title=\'Collection of beautiful wallpapers in orange color\'>Collection of beautiful wallpapers in orange color</a></li></ul>';
+collapsItems['collapsArch-2010-5:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2010/05/25/quick-seo-tips-to-build-search-engine-friendly-websites/\' title=\'Quick SEO tips to build search engine friendly websites\'>Quick SEO tips to build search engine friendly websites</a></li></ul>';
+collapsItems['collapsArch-2010-4:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2010/04/23/geeky-girls-showcase-of-50-incredibly-talented-female-web-designers/\' title=\'Geeky Girls - Showcase of 50+ incredibly talented female web designers\'>Geeky Girls - Showcase of 50+ incredibly talented female web designers</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2010/04/05/60-beautiful-handpicked-wallpapers-for-your-iphone/\' title=\'60+ beautiful handpicked wallpapers for your iPhone\'>60+ beautiful handpicked wallpapers for your iPhone</a></li></ul>';
+collapsItems['collapsArch-2010-3:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2010/03/29/rgba-vs-opacity-the-difference-explained/\' title=\'RGBa vs Opacity: The Difference Explained\'>RGBa vs Opacity: The Difference Explained</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2010/03/18/go-green-showcase-of-50-beautiful-websites-in-green-color-theme/\' title=\'Go Green – Showcase of 50 beautiful websites in green color theme\'>Go Green – Showcase of 50 beautiful websites in green color theme</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2010/03/05/collection-of-amazingly-beautiful-mural-art-works-from-india/\' title=\'Collection of amazingly beautiful mural art works from India\'>Collection of amazingly beautiful mural art works from India</a></li></ul>';
+collapsItems['collapsArch-2010-2:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2010/02/13/css-heart-a-web-designer-way-of-wishing-valentines-day/\' title=\'CSS Heart – A web designer way of wishing Valentine’s Day…\'>CSS Heart – A web designer way of wishing Valentine’s Day…</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2010/02/08/common-questions-of-a-drupal-beginner/\' title=\'Common questions of a drupal beginner\'>Common questions of a drupal beginner</a></li></ul>';
+collapsItems['collapsArch-2010-1:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2010/01/26/jai-hanuman-rare-collection-of-lord-hanuman-illustrations/\' title=\'Jai Hanuman: Rare collection of Lord Hanuman Illustrations\'>Jai Hanuman: Rare collection of Lord Hanuman Illustrations</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2010/01/18/cool-sprites-free-overlapped-css-menu-using-css-sprites/\' title=\'Cool Sprites – Free overlapped CSS menu using CSS Sprites\'>Cool Sprites – Free overlapped CSS menu using CSS Sprites</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2010/01/11/colourful-swirls-collection-of-25-stunningly-beautiful-wallpapers/\' title=\'Colourful Swirls : Collection of 25+ stunningly beautiful wallpapers\'>Colourful Swirls : Collection of 25+ stunningly beautiful wallpapers</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2010/01/03/pov-ray-the-power-of-ray-tracing/\' title=\'POV-Ray : The Power of Ray Tracing\'>POV-Ray : The Power of Ray Tracing</a></li></ul>';
+collapsItems['collapsArch-2009-12:3'] = '<ul>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2009/12/30/my-new-year-resolutions-for-2010/\' title=\'My New Year Resolutions for 2010\'>My New Year Resolutions for 2010</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2009/12/20/what-is-data-uri-scheme/\' title=\'What is Data URI scheme?\'>What is Data URI scheme?</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2009/12/14/high-resolution-social-media-iconset-for-free-price-tag-style/\' title=\'Free High-Resolution Social-Media Iconset - PriceTag Style\'>Free High-Resolution Social-Media Iconset - PriceTag Style</a></li>          <li class=\'collapsing archives item\'><a href=\'http://deepubalan.com/blog/2009/12/06/hello-world/\' title=\'It’s Alive!\'>It’s Alive!</a></li></ul>';
+/*  Collapse Functions, version 2.0
+ *
+ *--------------------------------------------------------------------------*/
+String.prototype.trim = function() {
+  return this.replace(/^\s+|\s+$/g,"");
+}
+
+function createCookie(name,value,days) {
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime()+(days*24*60*60*1000));
+    var expires = "; expires="+date.toGMTString();
+  } else {
+    var expires = "";
+  }
+  document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function readCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0;i < ca.length;i++) {
+    var c = ca[i];
+    while (c.charAt(0)==' ') {
+      c = c.substring(1,c.length);
+    }
+    if (c.indexOf(nameEQ) == 0) {
+      return c.substring(nameEQ.length,c.length);
+    }
+  }
+  return null;
+}
+
+function eraseCookie(name) {
+  createCookie(name,"",-1);
+}
+
+function addExpandCollapse(id, expandSym, collapseSym, accordion) {
+  jQuery('#' + id + ' span.expand').on('click.collapsingArchives', function() {
+    if (accordion==1) {
+      var theDiv = jQuery(this).parent().parent().find('span.collapse').parent().children('div');
+      jQuery(theDiv).hide('normal');
+      jQuery(this).parent().parent().find('span.collapse').removeClass('collapse').addClass('expand');
+      createCookie(theDiv.attr('id'), 0, 7);
+      jQuery(this).parent().parent().find('span.sym').html(expandSym);
+      //jQuery('#' + id + ' .expand .sym').html(expandSym);
+    }
+    expandArch(this, expandSym, collapseSym);
+    return false;
+  });
+  jQuery('#' + id + ' span.collapse').on('click.collapsingArchives', function() {
+    collapseArch(this, expandSym, collapseSym);
+    return false;
+  });
+}
+
+function expandArch(symbol, expandSym, collapseSym) {
+    var theDiv = jQuery(symbol).parent().children('div');
+    try {
+      if (collapsItems[jQuery(theDiv).attr('id')]!='') {
+        jQuery(theDiv).html(collapsItems[jQuery(theDiv).attr('id')]).show('normal');
+      } else {
+        jQuery(theDiv).show('normal');
+      }
+    } catch (err) {
+      jQuery(theDiv).show('normal');
+    }
+    jQuery(symbol).removeClass('expand').addClass('collapse');
+    jQuery(symbol).children('.sym').html(collapseSym);
+    jQuery(symbol).off('click.collapsingArchives').on('click.collapsingArchives', function() {
+      collapseArch(symbol, expandSym, collapseSym);
+      return false;
+    });
+  createCookie(theDiv.attr('id'), 1, 7);
+}
+function collapseArch(symbol, expandSym, collapseSym) {
+    var theDiv = jQuery(symbol).parent().children('div');
+    jQuery(theDiv).hide('normal');
+    jQuery(symbol).removeClass('collapse').addClass('expand');
+    jQuery(symbol).children('.sym').html(expandSym);
+    jQuery(symbol).off('click.collapsingArchives').on('click.collapsingArchives', function() {
+      expandArch(symbol, expandSym, collapseSym);
+      return false;
+    });
+  createCookie(theDiv.attr('id'), 0, 7);
+}
+addExpandCollapse('widget-collapsarch-3-top','[+]', '[-]', 0)// ]]>
+</script></li>
+</ul>
+<div style="clear:both"></div></li><li id="cr_plmanager_widget-5" class="BlockContent widget_cr_plmanager_widget"><h2 class="widgettitle">Recommended Sites</h2><ul class="supporters"></ul><div style="clear:both"></div></li><li id="aptftbytap_domain-3" class="BlockContent APTFT_by_TAP"><h2 class="widgettitle">My Clicks</h2><!-- Using AlpinePT for Tumblr v1.2.6 with Tumblr API V1 XML --><!-- Request made --><!-- Success using simplexml_load_file() and XML --><div id="aptftbytap_domain-3-AlpinePhotoTiles_container" class="AlpinePhotoTiles_container_class"><div id="aptftbytap_domain-3-hidden-parent" class="AlpinePhotoTiles_parent_class" style="width:100%;max-width:100%;padding:0px;float:left;text-align:left;"><div id="aptftbytap_domain-3-image-list" class="AlpinePhotoTiles_image_list_class" style="display:none;visibility:hidden;"><a href="http://shandomrots.com/post/181241610334" class="AlpinePhotoTiles-link" target="_blank" title=" #earthwatersky #beachfront #kovalam #kerala #trivandrum #fishingboat (at Kovalam Beach, Kerala, India)https://www.instagram.com/p/BrkJBHLgR21/?utm_source=ig_tumblr_share&amp;igshid=jsqxxj1pivb2 " alt=" #earthwatersky #beachfront #kovalam #kerala #trivandrum #fishingboat (at Kovalam Beach, Kerala, India)https://www.instagram.com/p/BrkJBHLgR21/?utm_source=ig_tumblr_share&amp;igshid=jsqxxj1pivb2 "><img id="aptftbytap_domain-3-tile-0" class="AlpinePhotoTiles-image AlpinePhotoTiles-img-noshadow AlpinePhotoTiles-img-border AlpinePhotoTiles-img-corners AlpinePhotoTiles-img-highlight" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/tumblr_pjzae1cCez1sv6a58o1_75sq.jpg" title="#earthwatersky #beachfront #kovalam #kerala #trivandrum #fishingboat (at Kovalam Beach, Kerala, India)https://www.instagram.com/p/BrkJBHLgR21/?utm_source=ig_tumblr_share&amp;igshid=jsqxxj1pivb2" alt="#earthwatersky #beachfront #kovalam #kerala #trivandrum #fishingboat (at Kovalam Beach, Kerala, India)https://www.instagram.com/p/BrkJBHLgR21/?utm_source=ig_tumblr_share&amp;igshid=jsqxxj1pivb2" style="" vspace="0" hspace="0" border="0"></a><a href="http://shandomrots.com/post/174856939219" class="AlpinePhotoTiles-link" target="_blank" title=" #mistymorning #rainwalk #nature #monsoon #westernghats #nelliyampathy #kerala (at Kailas Plantations) " alt=" #mistymorning #rainwalk #nature #monsoon #westernghats #nelliyampathy #kerala (at Kailas Plantations) "><img id="aptftbytap_domain-3-tile-1" class="AlpinePhotoTiles-image AlpinePhotoTiles-img-noshadow AlpinePhotoTiles-img-border AlpinePhotoTiles-img-corners AlpinePhotoTiles-img-highlight" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/tumblr_pa9uxtwdKP1sv6a58o1_75sq.jpg" title="#mistymorning #rainwalk #nature #monsoon #westernghats #nelliyampathy #kerala (at Kailas Plantations)" alt="#mistymorning #rainwalk #nature #monsoon #westernghats #nelliyampathy #kerala (at Kailas Plantations)" style="" vspace="0" hspace="0" border="0"></a><a href="http://shandomrots.com/post/174747492239" class="AlpinePhotoTiles-link" target="_blank" title=" #nelliyampathy #seetharkundu #peak (at Seetharkundu View Point) " alt=" #nelliyampathy #seetharkundu #peak (at Seetharkundu View Point) "><img id="aptftbytap_domain-3-tile-2" class="AlpinePhotoTiles-image AlpinePhotoTiles-img-noshadow AlpinePhotoTiles-img-border AlpinePhotoTiles-img-corners AlpinePhotoTiles-img-highlight" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/tumblr_pa3itxjmba1sv6a58o1_75sq.jpg" title="#nelliyampathy #seetharkundu #peak (at Seetharkundu View Point)" alt="#nelliyampathy #seetharkundu #peak (at Seetharkundu View Point)" style="" vspace="0" hspace="0" border="0"></a><a href="http://shandomrots.com/post/174657044494" class="AlpinePhotoTiles-link" target="_blank" title=" #monsoon #ride #athirappilly #awesome #rain (at Green Trees Athirapilly) " alt=" #monsoon #ride #athirappilly #awesome #rain (at Green Trees Athirapilly) "><img id="aptftbytap_domain-3-tile-3" class="AlpinePhotoTiles-image AlpinePhotoTiles-img-noshadow AlpinePhotoTiles-img-border AlpinePhotoTiles-img-corners AlpinePhotoTiles-img-highlight" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/tumblr_p9y4ud14aJ1sv6a58o1_75sq.jpg" title="#monsoon #ride #athirappilly #awesome #rain (at Green Trees Athirapilly)" alt="#monsoon #ride #athirappilly #awesome #rain (at Green Trees Athirapilly)" style="" vspace="0" hspace="0" border="0"></a><a href="http://shandomrots.com/post/174650373969" class="AlpinePhotoTiles-link" target="_blank" title=" #nivi #smile #excited #home " alt=" #nivi #smile #excited #home "><img id="aptftbytap_domain-3-tile-4" class="AlpinePhotoTiles-image AlpinePhotoTiles-img-noshadow AlpinePhotoTiles-img-border AlpinePhotoTiles-img-corners AlpinePhotoTiles-img-highlight" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/tumblr_p9xoueXeey1sv6a58o1_75sq.jpg" title="#nivi #smile #excited #home" alt="#nivi #smile #excited #home" style="" vspace="0" hspace="0" border="0"></a><a href="http://shandomrots.com/post/174355958259" class="AlpinePhotoTiles-link" target="_blank" title=" #rainclouds #gradient #stadiumlamps #Trivandrum (at University Stadium) " alt=" #rainclouds #gradient #stadiumlamps #Trivandrum (at University Stadium) "><img id="aptftbytap_domain-3-tile-5" class="AlpinePhotoTiles-image AlpinePhotoTiles-img-noshadow AlpinePhotoTiles-img-border AlpinePhotoTiles-img-corners AlpinePhotoTiles-img-highlight" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/tumblr_p9gwkuSZXl1sv6a58o1_75sq.jpg" title="#rainclouds #gradient #stadiumlamps #Trivandrum (at University Stadium)" alt="#rainclouds #gradient #stadiumlamps #Trivandrum (at University Stadium)" style="" vspace="0" hspace="0" border="0"></a><a href="http://shandomrots.com/post/173773310669" class="AlpinePhotoTiles-link" target="_blank" title=" #eveningsky #trivandrum #karamana #orange #blue " alt=" #eveningsky #trivandrum #karamana #orange #blue "><img id="aptftbytap_domain-3-tile-6" class="AlpinePhotoTiles-image AlpinePhotoTiles-img-noshadow AlpinePhotoTiles-img-border AlpinePhotoTiles-img-corners AlpinePhotoTiles-img-highlight" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/tumblr_p8j0p7U5FS1sv6a58o1_75sq.jpg" title="#eveningsky #trivandrum #karamana #orange #blue" alt="#eveningsky #trivandrum #karamana #orange #blue" style="" vspace="0" hspace="0" border="0"></a><a href="http://shandomrots.com/post/173663605334" class="AlpinePhotoTiles-link" target="_blank" title=" #bandofbrothers #beach #eveningsky " alt=" #bandofbrothers #beach #eveningsky "><img id="aptftbytap_domain-3-tile-7" class="AlpinePhotoTiles-image AlpinePhotoTiles-img-noshadow AlpinePhotoTiles-img-border AlpinePhotoTiles-img-corners AlpinePhotoTiles-img-highlight" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/tumblr_p8ci5bTIHF1sv6a58o1_75sq.jpg" title="#bandofbrothers #beach #eveningsky" alt="#bandofbrothers #beach #eveningsky" style="" vspace="0" hspace="0" border="0"></a><a href="http://shandomrots.com/post/173640271934" class="AlpinePhotoTiles-link" target="_blank" title=" #aakramann #horseride #shankhmukham #trivandrum #weekend (at Shankumugham Beach) " alt=" #aakramann #horseride #shankhmukham #trivandrum #weekend (at Shankumugham Beach) "><img id="aptftbytap_domain-3-tile-8" class="AlpinePhotoTiles-image AlpinePhotoTiles-img-noshadow AlpinePhotoTiles-img-border AlpinePhotoTiles-img-corners AlpinePhotoTiles-img-highlight" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/tumblr_p8bdqcZeaS1sv6a58o1_75sq.jpg" title="#aakramann #horseride #shankhmukham #trivandrum #weekend (at Shankumugham Beach)" alt="#aakramann #horseride #shankhmukham #trivandrum #weekend (at Shankumugham Beach)" style="" vspace="0" hspace="0" border="0"></a><a href="http://shandomrots.com/post/173201424464" class="AlpinePhotoTiles-link" target="_blank" title=" #jaisriram #wallpainting #home #orange " alt=" #jaisriram #wallpainting #home #orange "><img id="aptftbytap_domain-3-tile-9" class="AlpinePhotoTiles-image AlpinePhotoTiles-img-noshadow AlpinePhotoTiles-img-border AlpinePhotoTiles-img-corners AlpinePhotoTiles-img-highlight" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/tumblr_p7ls4dvDXG1sv6a58o1_75sq.jpg" title="#jaisriram #wallpainting #home #orange" alt="#jaisriram #wallpainting #home #orange" style="" vspace="0" hspace="0" border="0"></a><a href="http://shandomrots.com/post/172931388274" class="AlpinePhotoTiles-link" target="_blank" title=" #happy #vishu #vishukani #kanikkonna #malayalee #newyear " alt=" #happy #vishu #vishukani #kanikkonna #malayalee #newyear "><img id="aptftbytap_domain-3-tile-10" class="AlpinePhotoTiles-image AlpinePhotoTiles-img-noshadow AlpinePhotoTiles-img-border AlpinePhotoTiles-img-corners AlpinePhotoTiles-img-highlight" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/tumblr_p76sb661pC1sv6a58o1_75sq.jpg" title="#happy #vishu #vishukani #kanikkonna #malayalee #newyear" alt="#happy #vishu #vishukani #kanikkonna #malayalee #newyear" style="" vspace="0" hspace="0" border="0"></a><a href="http://shandomrots.com/post/172165661479" class="AlpinePhotoTiles-link" target="_blank" title=" #waterlilies #nymphaea #officegarden #aambalpoo (at GDS Private Limited) " alt=" #waterlilies #nymphaea #officegarden #aambalpoo (at GDS Private Limited) "><img id="aptftbytap_domain-3-tile-11" class="AlpinePhotoTiles-image AlpinePhotoTiles-img-noshadow AlpinePhotoTiles-img-border AlpinePhotoTiles-img-corners AlpinePhotoTiles-img-highlight" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/tumblr_p61gdw89Rs1sv6a58o1_75sq.jpg" title="#waterlilies #nymphaea #officegarden #aambalpoo (at GDS Private Limited)" alt="#waterlilies #nymphaea #officegarden #aambalpoo (at GDS Private Limited)" style="" vspace="0" hspace="0" border="0"></a></div><div class="AlpinePhotoTiles-row" style="height: 105px;"><div class="AlpinePhotoTiles-image-div-container AlpinePhotoTiles-tile AlpinePhotoTiles-border-div AlpinePhotoTiles-curve-div" style="height: 95px; width: 90px; left: 0px;"><a href="http://shandomrots.com/post/181241610334" class="AlpinePhotoTiles-link" target="_blank"><div id="aptftbytap_domain-3-hidden-parent-image-0" class="AlpinePhotoTiles-image-div" style="background-image: url(&quot;https://66.media.tumblr.com/72ec0a78d35c5636990beed2c60e4075/tumblr_pjzae1cCez1sv6a58o1_75sq.jpg&quot;);"></div></a></div><div class="AlpinePhotoTiles-image-div-container AlpinePhotoTiles-tile AlpinePhotoTiles-border-div AlpinePhotoTiles-curve-div" style="height: 95px; width: 90px; left: 105px;"><a href="http://shandomrots.com/post/174856939219" class="AlpinePhotoTiles-link" target="_blank"><div id="aptftbytap_domain-3-hidden-parent-image-1" class="AlpinePhotoTiles-image-div" style="background-image: url(&quot;https://66.media.tumblr.com/8c0bd6982000d6dbc07626631836eedc/tumblr_pa9uxtwdKP1sv6a58o1_75sq.jpg&quot;);"></div></a></div><div class="AlpinePhotoTiles-image-div-container AlpinePhotoTiles-tile AlpinePhotoTiles-border-div AlpinePhotoTiles-curve-div" style="height: 95px; width: 90px; left: 210px;"><a href="http://shandomrots.com/post/174747492239" class="AlpinePhotoTiles-link" target="_blank"><div id="aptftbytap_domain-3-hidden-parent-image-2" class="AlpinePhotoTiles-image-div" style="background-image: url(&quot;https://66.media.tumblr.com/6da6271c68165247677b7083eb22556e/tumblr_pa3itxjmba1sv6a58o1_75sq.jpg&quot;);"></div></a></div><div class="AlpinePhotoTiles-image-div-container AlpinePhotoTiles-tile AlpinePhotoTiles-border-div AlpinePhotoTiles-curve-div" style="height: 95px; width: 90px; left: 315px;"><a href="http://shandomrots.com/post/174657044494" class="AlpinePhotoTiles-link" target="_blank"><div id="aptftbytap_domain-3-hidden-parent-image-3" class="AlpinePhotoTiles-image-div" style="background-image: url(&quot;https://66.media.tumblr.com/fc4ad45120638a999c11ae9770a7f614/tumblr_p9y4ud14aJ1sv6a58o1_75sq.jpg&quot;);"></div></a></div></div><div class="AlpinePhotoTiles-row" style="height: 105px;"><div class="AlpinePhotoTiles-image-div-container AlpinePhotoTiles-tile AlpinePhotoTiles-border-div AlpinePhotoTiles-curve-div" style="height: 95px; width: 90px; left: 0px;"><a href="http://shandomrots.com/post/174650373969" class="AlpinePhotoTiles-link" target="_blank"><div id="aptftbytap_domain-3-hidden-parent-image-0" class="AlpinePhotoTiles-image-div" style="background-image: url(&quot;https://66.media.tumblr.com/acc05fa28050b40723ad6e9abeb96833/tumblr_p9xoueXeey1sv6a58o1_75sq.jpg&quot;);"></div></a></div><div class="AlpinePhotoTiles-image-div-container AlpinePhotoTiles-tile AlpinePhotoTiles-border-div AlpinePhotoTiles-curve-div" style="height: 95px; width: 90px; left: 105px;"><a href="http://shandomrots.com/post/174355958259" class="AlpinePhotoTiles-link" target="_blank"><div id="aptftbytap_domain-3-hidden-parent-image-1" class="AlpinePhotoTiles-image-div" style="background-image: url(&quot;https://66.media.tumblr.com/b1b81bb9bc720249d6aee0ec526e43a2/tumblr_p9gwkuSZXl1sv6a58o1_75sq.jpg&quot;);"></div></a></div><div class="AlpinePhotoTiles-image-div-container AlpinePhotoTiles-tile AlpinePhotoTiles-border-div AlpinePhotoTiles-curve-div" style="height: 95px; width: 90px; left: 210px;"><a href="http://shandomrots.com/post/173773310669" class="AlpinePhotoTiles-link" target="_blank"><div id="aptftbytap_domain-3-hidden-parent-image-2" class="AlpinePhotoTiles-image-div" style="background-image: url(&quot;https://66.media.tumblr.com/93defa7456b244aa94038fb92d7f25db/tumblr_p8j0p7U5FS1sv6a58o1_75sq.jpg&quot;);"></div></a></div><div class="AlpinePhotoTiles-image-div-container AlpinePhotoTiles-tile AlpinePhotoTiles-border-div AlpinePhotoTiles-curve-div" style="height: 95px; width: 90px; left: 315px;"><a href="http://shandomrots.com/post/173663605334" class="AlpinePhotoTiles-link" target="_blank"><div id="aptftbytap_domain-3-hidden-parent-image-3" class="AlpinePhotoTiles-image-div" style="background-image: url(&quot;https://66.media.tumblr.com/945ddbe9fd147e4d1ed7c9c5a37c4517/tumblr_p8ci5bTIHF1sv6a58o1_75sq.jpg&quot;);"></div></a></div></div><div class="AlpinePhotoTiles-row" style="height: 105px;"><div class="AlpinePhotoTiles-image-div-container AlpinePhotoTiles-tile AlpinePhotoTiles-border-div AlpinePhotoTiles-curve-div" style="height: 95px; width: 90px; left: 0px;"><a href="http://shandomrots.com/post/173640271934" class="AlpinePhotoTiles-link" target="_blank"><div id="aptftbytap_domain-3-hidden-parent-image-0" class="AlpinePhotoTiles-image-div" style="background-image: url(&quot;https://66.media.tumblr.com/8eb9f85f6116e1da45483d086f470ea8/tumblr_p8bdqcZeaS1sv6a58o1_75sq.jpg&quot;);"></div></a></div><div class="AlpinePhotoTiles-image-div-container AlpinePhotoTiles-tile AlpinePhotoTiles-border-div AlpinePhotoTiles-curve-div" style="height: 95px; width: 90px; left: 105px;"><a href="http://shandomrots.com/post/173201424464" class="AlpinePhotoTiles-link" target="_blank"><div id="aptftbytap_domain-3-hidden-parent-image-1" class="AlpinePhotoTiles-image-div" style="background-image: url(&quot;https://66.media.tumblr.com/b24423457dc0185f8ada0e92a94dc78f/tumblr_p7ls4dvDXG1sv6a58o1_75sq.jpg&quot;);"></div></a></div><div class="AlpinePhotoTiles-image-div-container AlpinePhotoTiles-tile AlpinePhotoTiles-border-div AlpinePhotoTiles-curve-div" style="height: 95px; width: 90px; left: 210px;"><a href="http://shandomrots.com/post/172931388274" class="AlpinePhotoTiles-link" target="_blank"><div id="aptftbytap_domain-3-hidden-parent-image-2" class="AlpinePhotoTiles-image-div" style="background-image: url(&quot;https://66.media.tumblr.com/ed2411ab37e2cb622fff885be3787751/tumblr_p76sb661pC1sv6a58o1_75sq.jpg&quot;);"></div></a></div><div class="AlpinePhotoTiles-image-div-container AlpinePhotoTiles-tile AlpinePhotoTiles-border-div AlpinePhotoTiles-curve-div" style="height: 95px; width: 90px; left: 315px;"><a href="http://shandomrots.com/post/172165661479" class="AlpinePhotoTiles-link" target="_blank"><div id="aptftbytap_domain-3-hidden-parent-image-3" class="AlpinePhotoTiles-image-div" style="background-image: url(&quot;https://66.media.tumblr.com/3d5b83b619a28663cf2cb7c388e79ae1/tumblr_p61gdw89Rs1sv6a58o1_75sq.jpg&quot;);"></div></a></div></div></div></div><script>
+    jQuery(document).ready(function() {
+      jQuery('#aptftbytap_domain-3-AlpinePhotoTiles_container').addClass('loading'); 
+    });
+    
+    // Check for on() ( jQuery 1.7+ )
+    if( jQuery.isFunction( jQuery(window).on ) ){
+      jQuery(window).on('load', function(){
+        jQuery('#aptftbytap_domain-3-AlpinePhotoTiles_container').removeClass('loading');
+        
+        var alpineLoadPlugin = function(){
+          jQuery('#aptftbytap_domain-3-hidden-parent').AlpinePhotoTilesPlugin({
+            id:'aptftbytap_domain-3',
+            style:'wall',
+            shape:'rectangle',
+            perRow:4,
+            imageBorder:1,
+            imageShadow:0,
+            imageCurve:1,
+            imageHighlight:1,
+            lightbox:0,
+            galleryHeight:0, // Keep for Compatibility
+            galRatioWidth:800,
+            galRatioHeight:600,
+            highlight:'#028afd',
+            pinIt:0,
+            siteURL:'http://deepubalan.com/blog',
+            callback: ''
+          });
+        }
+        
+        // Load Alpine Plugin
+        if( jQuery().AlpinePhotoTilesPlugin ){
+          alpineLoadPlugin();
+        }else{ // Load Alpine Script and Style
+          var css = 'http://deepubalan.com/blog/wp-content/plugins/alpine-photo-tile-for-tumblr/css/AlpinePhotoTiles_style.css';
+          var link = jQuery(document.createElement('link')).attr({'rel':'stylesheet','href':css,'type':'text/css','media':'screen'});
+          jQuery.getScript('http://deepubalan.com/blog/wp-content/plugins/alpine-photo-tile-for-tumblr/js/AlpinePhotoTiles_script.js', function(){
+            if(document.createStyleSheet){
+              document.createStyleSheet(css);
+            }else{
+              jQuery('head').append(link);
+            }
+            alpineLoadPlugin();
+          }); // Close getScript
+        }
+      });
+    }else{ 
+      // Otherwise, use bind()
+      jQuery(window).bind('load', function(){
+        jQuery('#aptftbytap_domain-3-AlpinePhotoTiles_container').removeClass('loading');
+        
+        var alpineLoadPlugin = function(){
+          jQuery('#aptftbytap_domain-3-hidden-parent').AlpinePhotoTilesPlugin({
+            id:'aptftbytap_domain-3',
+            style:'wall',
+            shape:'rectangle',
+            perRow:4,
+            imageBorder:1,
+            imageShadow:0,
+            imageCurve:1,
+            imageHighlight:1,
+            lightbox:0,
+            galleryHeight:0, // Keep for Compatibility
+            galRatioWidth:800,
+            galRatioHeight:600,
+            highlight:'#028afd',
+            pinIt:0,
+            siteURL:'http://deepubalan.com/blog',
+            callback: ''
+          });
+        }
+        
+        // Load Alpine Plugin
+        if( jQuery().AlpinePhotoTilesPlugin ){
+          alpineLoadPlugin();
+        }else{ // Load Alpine Script and Style
+          var css = 'http://deepubalan.com/blog/wp-content/plugins/alpine-photo-tile-for-tumblr/css/AlpinePhotoTiles_style.css';
+          var link = jQuery(document.createElement('link')).attr({'rel':'stylesheet','href':css,'type':'text/css','media':'screen'});
+          jQuery.getScript('http://deepubalan.com/blog/wp-content/plugins/alpine-photo-tile-for-tumblr/js/AlpinePhotoTiles_script.js', function(){
+            if(document.createStyleSheet){
+              document.createStyleSheet(css);
+            }else{
+              jQuery('head').append(link);
+            }
+            alpineLoadPlugin();
+          }); // Close getScript
+        }
+      });
+    }
+</script><div style="clear:both"></div></li><li id="text-7" class="BlockContent widget_text"><h2 class="widgettitle">Hi There!</h2>			<div class="textwidget"><div class="profileDesc" style="line-height: 24px;"><div class="profilepic" style="float:right;margin-top: -20px; margin-bottom: -13px"><img style="width: 80px; margin-right: 15px;" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/deepu-pachalloor.gif" title="Deepu Pachalloor" alt="Deepu Balan"></div>I’m
+ Deepu Balan, a Web/UI Designer and Developer living in Trivandrum, the 
+capital city of the South Indian state Kerala. I am really passionate 
+about     computers and internet. I love to play with colors and codes. 
+This is my online design lab, where I tryout and talk about all those 
+stuffs and whatever else comes to my mind... <a href="http://deepubalan.com/blog/about/">More</a></div></div>
+		<div style="clear:both"></div></li></div><div style="clear:both"></div>
+</div>
+
+</div>
+<div class="footerBg">
+	<div class="wrapper">
+	<div id="footer">
+		<div style="float: left;">
+		<p>Copyright © 2019 <a href="http://deepubalan.com/">Deepu Balan</a> All Rights Reserved. </p>
+		</div>
+<div style="float: right;display:none;">
+<p><a href="http://buzzoid.com/" target="_blank">buy instagram followers</a></p>
+</div>
+		</div>
+	</div>
+</div> 
+<!-- Powered by WPtouch: 3.7.6 -->	<div style="display:none">
+	<div class="grofile-hash-map-817a7c442d5c2b18f39139d36357af0e">
+	</div>
+	</div>
+
+	<script type="text/javascript">
+		WPCOM_sharing_counts = {"http:\/\/deepubalan.com\/blog\/2011\/06\/17\/free-pure-css-dropdown-menu-using-target-pseudo-class\/":1508}	</script>
+<script type="text/javascript" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/sharing.js"></script>
+		<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=600,height=600' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-linkedin' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+		});
+		</script>
+							<script type="text/javascript">
+			jQuery(document).on('ready', function(){
+				jQuery('body').on('click', 'a.share-pinterest', function(e){
+					e.preventDefault();
+
+					// Load Pinterest Bookmarklet code
+					var s = document.createElement("script");
+					s.type = "text/javascript";
+					s.src = window.location.protocol + "//assets.pinterest.com/js/pinmarklet.js?r=" + ( Math.random() * 99999999 );
+					var x = document.getElementsByTagName("script")[0];
+					x.parentNode.insertBefore(s, x);
+
+					// Trigger Stats
+					var s = document.createElement("script");
+					s.type = "text/javascript";
+					s.src = this + ( this.toString().indexOf( '?' ) ? '&' : '?' ) + 'js_only=1';
+					var x = document.getElementsByTagName("script")[0];
+					x.parentNode.insertBefore(s, x);
+				});
+			});
+			</script>
+			<div id="sharing_email" style="display: none;">
+		<form action="/blog/2011/06/17/free-pure-css-dropdown-menu-using-target-pseudo-class/" method="post">
+			<label for="target_email">Send to Email Address</label>
+			<input type="text" name="target_email" id="target_email">
+
+			
+				<label for="source_name">Your Name</label>
+				<input type="text" name="source_name" id="source_name">
+
+				<label for="source_email">Your Email Address</label>
+				<input type="text" name="source_email" id="source_email">
+
+			
+			
+			<img style="float: right; display: none" class="loading" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/loading.gif" alt="loading" width="16" height="16">
+			<input type="submit" value="Send Email" class="sharing_send">
+			<a href="#cancel" class="sharing_cancel">Cancel</a>
+
+			<div class="errors errors-1" style="display: none;">
+				Post was not sent - check your email addresses!			</div>
+
+			<div class="errors errors-2" style="display: none;">
+				Email check failed, please try again			</div>
+
+			<div class="errors errors-3" style="display: none;">
+				Sorry, your blog cannot share posts by email.			</div>
+		</form>
+	</div>
+<link rel="stylesheet" id="AlpinePhotoTiles_style-css" href="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/AlpinePhotoTiles_style.css" type="text/css" media="all">
+<script type="text/javascript" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/comment-reply.js"></script>
+<script type="text/javascript" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/devicepx-jetpack.js"></script>
+<script type="text/javascript" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/wp-syntax.js"></script>
+<script type="text/javascript" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/gprofiles.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/wpgroho.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"http:\/\/deepubalan.com\/blog\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/thickbox.js"></script>
+<script type="text/javascript" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/wp-embed.js"></script>
+<script type="text/javascript" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/AlpinePhotoTiles_script.js"></script>
+
+	<script src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/e-201902.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	st_go({v:'ext',j:'1:2.2.7',blog:'45183646',post:'1508',tz:'5.5'});
+	var load_cmc = function(){linktracker_init(45183646,1508,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11893542-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=5380033; 
+var sc_invisible=1; 
+var sc_partition=53; 
+var sc_click_stat=1; 
+var sc_security="95f6f336"; 
+</script>
+<script type="text/javascript" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/counter_xhtml.js"></script><noscript><div
+class="statcounter"><a title="myspace hit counters"
+class="statcounter"
+href="http://www.statcounter.com/myspace/"><img
+class="statcounter"
+src="http://c.statcounter.com/5380033/0/95f6f336/1/"
+alt="myspace hit counters" /></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+<!-- start of compete.com Code -->
+<script type="text/javascript">
+    __compete_code = '0fb08dc00611e7794dd62431c4d507f1';
+    (function () {
+        var s = document.createElement('script'),
+            d = document.getElementsByTagName('head')[0] ||
+                document.getElementsByTagName('body')[0],
+            t = 'https:' == document.location.protocol ? 
+                'https://c.compete.com/bootstrap/' : 
+                'http://c.compete.com/bootstrap/';
+        s.src = t + __compete_code + '/bootstrap.js';
+        s.type = 'text/javascript';
+        s.async = 'async'; 
+        if (d) { d.appendChild(s); }
+    }());
+</script>
+<!-- End of Compete.com Code -->
+
+<!-- Start Quantcast tag -->
+<script type="text/javascript">
+_qoptions={
+qacct:"p-26dMFAz8OFMKM"
+};
+</script>
+<script type="text/javascript" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/quant.js"></script>
+<noscript>
+<img src="http://pixel.quantserve.com/pixel/p-26dMFAz8OFMKM.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- End Quantcast tag -->
+
+<script type="text/javascript" src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/plusone.js" gapi_processed="true"></script>
+
+
+
+
+
+<img src="Pure%20CSS%20DropDown%20Menu%20using%20%20target%20pseudo%20class%20%20%20Deepu%20Balan_files/g.gif" alt=":)" id="wpstats" width="6" height="5"><div id="TB_overlay" class="TB_overlayBG"></div><div id="TB_window" class="" style="margin-left: -310px; width: 620px; margin-top: -170px; visibility: visible;"><div id="TB_title"><div id="TB_ajaxWindowTitle">Pure CSS DropDown Menu Using :target Pseudo Class</div><div id="TB_closeAjaxWindow"><button type="button" id="TB_closeWindowButton"><span class="screen-reader-text">Close</span><span class="tb-close-icon"></span></button></div></div><iframe hspace="0" allowtransparency="true" src="http://deepubalan.com/blog/wp-content/uploads/2011/06/example.html?KeepThis=true&amp;" id="TB_iframeContent" name="TB_iframeContent933" onload="tb_showIframe()" style="width:619px;height:312px;" frameborder="0">This feature requires inline frames. You have iframes disabled or your browser does not support them.</iframe></div></body></html>
+<!-- Dynamic page generated in 1.307 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2019-01-08 18:05:04 -->
+<!-- super cache -->

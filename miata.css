@@ -1,0 +1,102 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    background-image: url(wp1730118.jpg);
+    height: 10vh;
+    background-size: cover;
+    background-position: center;
+	position:static;
+}
+.main-nav
+{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.main-nav li {
+    display: inline-block;
+}
+.main-nav li a {
+    color: red;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    margin-right: 39px;
+	background-color:rgba(0,0,0,0.6);
+}
+.main-nav li.active a
+{
+    border: 5px solid red;
+}
+.main-nav li a:hover
+{
+    border: 3px solid red;
+}
+.logo img {
+    width: 150px;
+    height: auto;
+    float: left;
+    margin-left: 40px;
+	margin-top: 1%;
+}
+.titulo {
+    margin-top: 0px;
+    margin-left: 0px;
+	padding-left:5%;
+    width: 10%;
+	float: left;
+}
+h1 {
+    color: red;
+    margin-top: 25px;
+    font-size: 3em;
+}
+.toggle-nav {
+	display:none;
+}
+.content p {
+		color:pink;
+		padding:2%;
+		border-color:red;
+		font-size:2em;
+		float:left;
+		background-color:purple;
+		margin-top:5%;
+
+}
+.content a {
+		color:pink;
+		padding-top:10%;
+		border-color:red;
+		font-size:2em;
+		float:left;
+		margin:5%;
+		padding:5%;
+		background-color:rgba(255,0,0,0.3);
+		border-radius: 25px;
+		width:80%;
+
+
+}
+.content {
+		float:center;
+		background-image: url(wp1730118.jpg);
+}
+.row {
+		width:100%;
+		float:center;
+		background-image: url(wp1730118.jpg);
+		color:red;
+}
+article
+{
+    background-image: url(wp1730118.jpg);
+    height:90vh;
+    background-size: cover;
+    background-position: center;
+}
