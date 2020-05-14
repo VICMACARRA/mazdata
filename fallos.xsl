@@ -4,6 +4,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/">
   <html>
   <body>
+    <style>
+     html {background-color:black;} 
+
+    </style>
     <h2>Posibles fallos</h2>
     <table border="1">
       <tr bgcolor="red">
